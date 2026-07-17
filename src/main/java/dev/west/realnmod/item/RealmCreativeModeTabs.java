@@ -1,0 +1,508 @@
+package dev.west.realnmod.item;
+
+import dev.west.realnmod.Realm_Mod;
+import dev.west.realnmod.block.*;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+
+public class RealmCreativeModeTabs {
+
+
+
+    public static final CreativeModeTab FOOD = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"food"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.GOATFEED_CROP))
+                    .title(Component.translatable("item.realm_food"))
+                    .displayItems((parameters, output) -> {
+                       output.accept(RealmItems.GOAT_FEED);
+                       output.accept(RealmItems.GOLD_SEEDS);
+                       output.accept(RealmItems.Dark_Soul_SEED);
+                       output.accept(RealmItems.BRIGHT_SILVER_SEED);
+                       output.accept(RealmItems.DARK_APPLE);
+                       output.accept(RealmItems.SILVER_APPLE);
+                       output.accept(RealmItems.MUSHROOM);
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+    public static final CreativeModeTab FANTASY = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"fantasy"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.MITHRIL_GLOW))
+                    .title(Component.translatable("item.realm_fantasy"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmBlocks.MITHRIL_GLOW);
+                        output.accept(RealmBlocks.DARK_SOUL_GLOW);
+                        output.accept(RealmBlocks.GOLD_LIGHT_GLOW);
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final CreativeModeTab MUSHROOM = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"mushroom"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmMushroom.angel_mushroom))
+                    .title(Component.translatable("item.realm_mushroom"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmMushroom.angel_mushroom);
+                        output.accept(RealmMushroom.marshmoon_mushroom);
+                        output.accept(RealmMushroom.dark_soul_mushroom);
+                        output.accept(RealmMushroom.poss_mushroom);
+                        output.accept(RealmMushroom.silver_mushroom);
+                        output.accept(RealmMushroom.mithril_mushroom);
+
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+    public static final CreativeModeTab STONE_BRICK = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"stone_brick"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmStoneBrick.stone_Brick))
+                    .title(Component.translatable("item.realm_stone_brick"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmStoneBrick.stone_Brick);
+                        output.accept(RealmStoneBrick.stone_Brick1);
+                        output.accept(RealmStoneBrick.stone_Brick2);
+                        output.accept(RealmStoneBrick.stone_Brick_2_slab);
+                        output.accept(RealmStoneBrick.stone_Brick2_1);
+                        output.accept(RealmStoneBrick.stone_Brick2_2);
+                        output.accept(RealmStoneBrick.stone_Brick_1);
+                        output.accept(RealmStoneBrick.stone_Brick_2);
+                        output.accept(RealmStoneBrick.stone_Brick_3);
+                        output.accept(RealmStoneBrick.stone_Brick_4);
+                        output.accept(RealmStoneBrick.stone_Brick_5);
+                        output.accept(RealmStoneBrick.stone_Brick_6);
+                        output.accept(RealmStoneBrick.stone_Brick_7);
+                        output.accept(RealmStoneBrick.stone_Brick_8);
+                        output.accept(RealmStoneBrick.stone_Brick_9);
+                        output.accept(RealmStoneBrick.stone_Brick_10);
+                        output.accept(RealmStoneBrick.stone_Brick_11);
+                        output.accept(RealmStoneBrick.stone_Brick_11_slab);
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final CreativeModeTab STONE = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"stone"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmStone.stone))
+                    .title(Component.translatable("item.realm_stone"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmStone.WHITE_STONE_2);
+                        output.accept(RealmStone.WHITE_STONE_1);
+                        output.accept(RealmStone.WHITE_STONE_HALF);
+                        output.accept(RealmStone.WHITE_STONE);
+                        output.accept(RealmStone.aged_limestone_c);
+                        output.accept(RealmStone.red_stone);
+                        output.accept(RealmStone.red_stone1);
+                        output.accept(RealmStone.stone_age);
+                        output.accept(RealmStone.stone_brick_m);
+                        output.accept(RealmStone.stone_brick_m1);
+                        output.accept(RealmStone.stone_brick4);
+                        output.accept(RealmStone.stone_brick5);
+                        output.accept(RealmStone.stone1);
+                        output.accept(RealmStone.stone2);
+                        output.accept(RealmStone.stone3);
+                        output.accept(RealmStone.MITHRIL_STONE);
+                        output.accept(RealmStone.MITHRIL_STONE1);
+                        output.accept(RealmStone.MITHRIL_STONE2);
+                        output.accept(RealmStone.MITHRIL_STONE_SLAB);
+                        output.accept(RealmStone.MITHRIL_COBBLE);
+                        output.accept(RealmStone.MITHRIL_COBBLE1);
+                        output.accept(RealmStone.MITHRIL_COBBLE2);
+                        output.accept(RealmStone.MITHRIL_COBBLE_SLAB);
+                        output.accept(RealmStone.MITHRIL_COBBLE1_SLAB);
+                        output.accept(RealmStone.MOSS_FORGE);
+                        output.accept(RealmStone.GOLD_COBBLE);
+                        output.accept(RealmStone.DARK_SOUL_COBBLE);
+                        output.accept(RealmStone.DARK_SOUL_STONE_RUNE);
+                        output.accept(RealmStone.BLACKSTONE1);
+                        output.accept(RealmStone.BLACKSTONE2);
+                        output.accept(RealmStone.BLACKSTONE1_STAIR);
+                        output.accept(RealmStone.stone);
+                        output.accept(RealmStone.stone_1);
+                        output.accept(RealmStone.stone_2);
+                        output.accept(RealmStone.stone_3);
+                        output.accept(RealmStone.stone_4);
+                        output.accept(RealmStone.dark_stone);
+                        output.accept(RealmStone.dark_stone1);
+                        output.accept(RealmStone.dark_stone2);
+                        output.accept(RealmStone.deep_stone2);
+                        output.accept(RealmStone.dark_stone_slab);
+                        output.accept(RealmStone.dark_brick);
+                        output.accept(RealmStone.dark_rock);
+                        output.accept(RealmStone.dark_rock1);
+                        output.accept(RealmStone.dark_rock2);
+                        output.accept(RealmStone.DARK_STONE_DEEP);
+                        output.accept(RealmStone.DARK_STONE_DEEP_BRICK);
+                        output.accept(RealmStone.DARK_STONE_DEEP_BRICK1);
+                        output.accept(RealmStone.DARK_STONE_DEEP1);
+                        output.accept(RealmStone.rock_stone);
+                        output.accept(RealmStone.rock_stone_s);
+                        output.accept(RealmStone.deep_stone);
+                        output.accept(RealmStone.dark_stonebrick);
+                        output.accept(RealmStone.deep_stone1);
+                        output.accept(RealmStone.STONE_ROCK);
+                        output.accept(RealmStone.STONE_ROCK1);
+                        output.accept(RealmStone.STONE_ROCK2);
+                        output.accept(RealmStone.STONE_ROCK_n);
+                        output.accept(RealmStone.STONE_ROCK_n1);
+                        output.accept(RealmStone.STONE_DEEP_ROCK);
+                        output.accept(RealmStone.STONE_DEEP_ROCK1);
+                        output.accept(RealmStone.STONEBRICK);
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+
+
+
+
+
+
+    public static final CreativeModeTab ITEM = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"item"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmItems.BLACKIRON))
+                    .title(Component.translatable("item.realm_Item"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmItems.BLACKIRON);
+                        output.accept(RealmItems.MITHRIL_INGOT);
+                        output.accept(RealmItems.SILVER_INGOT);
+                        output.accept(RealmItems.SUN_INGOT);
+                        output.accept(RealmItems.GRIZZ_INGOT);
+                        output.accept(RealmItems.BLAZE_INGOT);
+                        output.accept(RealmItems.MAGIC_INGOT);
+                        output.accept(RealmItems.MARINE_INGOT);
+                        output.accept(RealmItems.DARK_INGOT);
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final CreativeModeTab limestone = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"limestone"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmLimestone.red_limestone))
+                    .title(Component.translatable("item.realm_limestone"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmLimestone.red_limestone);
+                        output.accept(RealmLimestone.light_limestone);
+                        output.accept(RealmLimestone.light_limestone1);
+                        output.accept(RealmLimestone.light_limestone2);
+                        output.accept(RealmLimestone.limestone);
+                        output.accept(RealmLimestone.limestone1);
+                        output.accept(RealmLimestone.limestone2);
+                        output.accept(RealmLimestone.limestone3);
+                        output.accept(RealmLimestone.limestone4);
+                        output.accept(RealmLimestone.limestone5);
+                        output.accept(RealmLimestone.limestone6);
+                        output.accept(RealmLimestone.limestone7);
+                        output.accept(RealmLimestone.aged_limestone);
+                        output.accept(RealmLimestone.aged_limestone1);
+                        output.accept(RealmLimestone.aged_limestone2);
+                        output.accept(RealmLimestone.aged_limestone3);
+                        output.accept(RealmLimestone.aged_limestone4);
+                        output.accept(RealmLimestone.light_limestone_1);
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static final CreativeModeTab chalk = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"chalk"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmChalk.chalk))
+                    .title(Component.translatable("item.realm_chalk"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmChalk.chalk);
+                        output.accept(RealmChalk.chalk1);
+                        output.accept(RealmChalk.chalk2);
+                        output.accept(RealmChalk.chalk1_2);
+
+
+
+
+
+
+
+
+
+                    }).build());
+    public static final CreativeModeTab DESERT = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"desert"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmDesert.desert_stone))
+                    .title(Component.translatable("item.realm_desert"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmDesert.desert_stone);
+                        output.accept(RealmDesert.desert_stone1);
+                        output.accept(RealmDesert.desert_stone2);
+                        output.accept(RealmDesert.desert_stone3);
+                        output.accept(RealmDesert.desert_stone4);
+                        output.accept(RealmDesert.desert_stone_rock);
+                        output.accept(RealmDesert.desert_stone_rock1);
+                        output.accept(RealmDesert.desert_rock);
+                        output.accept(RealmDesert.desert_rock1);
+                        output.accept(RealmDesert.desert_rock2);
+                        output.accept(RealmDesert.desert_rock1_c);
+                        output.accept(RealmDesert.desert_rock2_c);
+
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+    public static final CreativeModeTab rhyolite = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"rhyolite"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmRhyolite.rhyolite))
+                    .title(Component.translatable("item.realm_rhyolite"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmRhyolite.rhyolite);
+                        output.accept(RealmRhyolite.rhyolite1);
+                        output.accept(RealmRhyolite.rhyolite1_c);
+
+
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final CreativeModeTab RUNES = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"runes"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(Realm_Ruins.MITHRIL_RUNE))
+                    .title(Component.translatable("item.realm_runes"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(Realm_Ruins.MITHRIL_RUNE);
+                        output.accept(Realm_Ruins.SILVER_RUNE);
+                        output.accept(Realm_Ruins.DARK_RUNE);
+                        output.accept(Realm_Ruins.DARK_RUNE1);
+                        output.accept(Realm_Ruins.EVIL_RUNE);
+                        output.accept(Realm_Ruins.EVIL_RUNE1);
+                        output.accept(Realm_Ruins.DARK_EVIL_RUNE);
+                        output.accept(Realm_Ruins.STONE_RUNE);
+                        output.accept(Realm_Ruins.DEEP_STONE_RUNE);
+                       output.accept(Realm_Ruins.LIGHT_BIRCH_LOG_RUNE);
+                       output.accept(Realm_Ruins.BIRCH_LOG_RUNE);
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final CreativeModeTab TUFF = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"tuff"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmTuff.tuff_brick))
+                    .title(Component.translatable("item.realm_tuff"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmTuff.tuff_brick);
+                        output.accept(RealmTuff.tuff_brick1);
+                        output.accept(RealmTuff.tuff_brick2);
+                        output.accept(RealmTuff.tuff_brick3);
+                        output.accept(RealmTuff.tuff_brick4);
+                        output.accept(RealmTuff.tuff1);
+                        output.accept(RealmTuff.tuff2);
+                        output.accept(RealmTuff.tuff3);
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+
+    public static final CreativeModeTab ORE = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"ore"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.MITHRIL_ORE))
+                    .title(Component.translatable("item.realm_ore"))
+                    .displayItems((parameters, output) -> {
+                      output.accept(RealmBlocks.MITHRIL_ORE);
+                      output.accept(RealmBlocks.BLACKIRON_SHARDS_BLOCK);
+                      output.accept(RealmBlocks.EVIL_SHARDS);
+                      output.accept(RealmBlocks.SILVER_ORE);
+                      output.accept(RealmBlocks.MITHRIL_SHARDS);
+                      output.accept(RealmBlocks.LARGE_MITHRIL_SHARDS);
+                      output.accept(RealmBlocks.MED_MITHRIL_SHARDS);
+                      output.accept(RealmBlocks.BLACK_POSS_SHARDS);
+                      output.accept(RealmBlocks.VORYN_SHARDS);
+                      output.accept(RealmBlocks.SUN_ORE);
+                      output.accept(RealmBlocks.BLACKIRON_ORE);
+                      output.accept(RealmBlocks.GRIZZ_ORE);
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static final CreativeModeTab LOG = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"log"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(Realm_logs.WHITE_PINE_LOG))
+                    .title(Component.translatable("item.realm_logs"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(Realm_logs.WHITE_PINE_LOG);
+                        output.accept(Realm_logs.MOSS_OAK_LOG);
+                        output.accept(Realm_logs.MITHRIL_LOG);
+                        output.accept(Realm_logs.CRYSTAL_OAK_LOG);
+                        output.accept(Realm_logs.WHITE_OAK_LOG);
+                        output.accept(Realm_logs.ALDER_LOG);
+                        output.accept(Realm_logs.DARK_SOUL_LOG);
+                        output.accept(Realm_logs.LIGHT_BIRCH_LOG);
+                        output.accept(Realm_logs.ESWELL_BIRCH_LOG);
+                        output.accept(Realm_logs.GOLD_SHADOW_LOG);
+                        output.accept(Realm_logs.VEIL_WOOD_LOG);
+                        output.accept(Realm_logs.DARK_SOUL_PLANKS);
+                        output.accept(Realm_logs.DARK_SOUL_STAIRS);
+                        output.accept(Realm_logs.SUN_OAK_LOG);
+                        output.accept(Realm_logs.SUN_OAK_PLANKS);
+                        output.accept(Realm_logs.SUN_OAK_FENCE);
+                        output.accept(Realm_logs.BLOOD_OAK_LOG);
+                        output.accept(Realm_logs.WINTER_OAK_PLANKS);
+                        output.accept(Realm_logs.WINTER_OAK_LOG);
+                        output.accept(Realm_logs.ASH_OAK_LOG);
+                        output.accept(Realm_logs.WINTER_OAK_LEAVES);
+                        output.accept(Realm_logs.DARK_SOUL_LEAVES);
+                        output.accept(Realm_logs.SUN_OAK_LEAVES);
+                        output.accept(Realm_logs.MITHRIL_LEAVES);
+                        output.accept(Realm_logs.WHITE_PINE_LEAVES);
+                        output.accept(Realm_logs.ANGEL_BIRCH_LOG);
+                        output.accept(Realm_logs.BURN_BIRCH_LOG);
+                        output.accept(Realm_logs.THUNDER_OAK_LOG);
+                        output.accept(Realm_logs.ORG_WILLOW_LOG);
+                        output.accept(Realm_logs.STARBLOOM_LOG);
+                        output.accept(Realm_logs.MOONSHADE_BIRCH_LOG);
+                        output.accept(Realm_logs.SHADOW_BIRCH_LOG);
+                        output.accept(Realm_logs.SHADOW_PINE_LOG);
+                        output.accept(Realm_logs.DARK_SOUL_LOG_CHAIN);
+                        output.accept(Realm_logs.EMBERIAR_LOG);
+                        output.accept(Realm_logs.MISTWOOD_LOG);
+                        output.accept(Realm_logs.DEEPCORE_LOG);
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static void registerCreativeModeTabs() {
+        Realm_Mod.LOGGER.info("Registering Creative Mode Tabs for " + Realm_Mod.MOD_ID);
+    }
+}
+

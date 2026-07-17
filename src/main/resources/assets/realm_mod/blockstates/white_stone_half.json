@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "layers=1": {
+      "model": "realm_mod:block/white_stone_half_height2"
+    },
+    "layers=2": {
+      "model": "realm_mod:block/white_stone_half_height4"
+    },
+    "layers=3": {
+      "model": "realm_mod:block/white_stone_half_height6"
+    },
+    "layers=4": {
+      "model": "realm_mod:block/white_stone_half_height8"
+    },
+    "layers=5": {
+      "model": "realm_mod:block/white_stone_half_height10"
+    },
+    "layers=6": {
+      "model": "realm_mod:block/white_stone_half_height12"
+    },
+    "layers=7": {
+      "model": "realm_mod:block/white_stone_half_height14"
+    },
+    "layers=8": {
+      "model": "realm_mod:block/white_stone_half"
+    }
+  }
+}
