@@ -19,6 +19,22 @@ import java.util.function.Function;
 public class Realm_logs {
 
 
+
+    public static final Block MAPLEHAVEN_LOG = registerBlock("maplehaven_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block WILLOW_BLOOM_LOG = registerBlock("willow_bloom_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block sorcerers_OAK_LOG = registerBlock("sorcerers_oak_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block SILVER_OAK_LOG = registerBlock("silver_oak_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BLUE_SPRUCE_LOG = registerBlock("blue_spruce_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
     public static final Block WHITE_PINE_LOG = registerBlock("white_pine_log",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
@@ -103,6 +119,18 @@ public class Realm_logs {
     public static final Block BURN_BIRCH_LOG = registerBlock("burn_birch_log",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BURN_BIRCH_PLANKS = registerBlock("burn_birch_planks",
+            properties -> new Block(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BURN_BIRCH_WALL = registerBlock("burn_birch_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BURN_BIRCH_SLAB = registerBlock("burn_birch_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BURN_BIRCH_fence = registerBlock("burn_birch_fence",
+            properties -> new FenceBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
     public static final Block THUNDER_OAK_LOG = registerBlock("thunder_oak_log",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
@@ -110,6 +138,15 @@ public class Realm_logs {
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
     public static final Block LIGHT_BIRCH_LOG = registerBlock("light_birch_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block GRIM_BIRCH_LOG = registerBlock("grim_birch_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block SPUS_LOG = registerBlock("spus_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block URBAN_LOG = registerBlock("urban_log",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
     public static final Block ESWELL_BIRCH_LOG = registerBlock("eswell_birch_log",
@@ -148,6 +185,70 @@ public class Realm_logs {
     public static final Block SHADOW_PINE_LOG = registerBlock("shadow_pine_log",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block RED_WOOD_LOG = registerBlock("red_wood_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block SHADOW_PINE_PLANKS = registerBlock("shadow_pine_planks",
+            properties -> new Block(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block SHADOW_PINE_FENCE = registerBlock("shadow_pine_fence",
+            properties -> new FenceBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block SHADOW_EYE_PINE_LOG = registerBlock("shadow_eye_pine_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block WINTER_BIRCH_LOG = registerBlock("winter_birch_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block HOLLOW_ELbER_LOG = registerBlock("hollow_elber_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block ESWELL_LEAVES = registerBlock("eswell_leaves",
+            properties -> new UntintedParticleLeavesBlock(0f, ParticleTypes.PALE_OAK_LEAVES,
+                    properties.mapColor(MapColor.COLOR_RED).strength(0.2F).randomTicks().sound(SoundType.GRASS)
+                            .noOcclusion().isValidSpawn(Blocks::ocelotOrParrot).isSuffocating(Blocks::never)
+                            .isViewBlocking(Blocks::never).ignitedByLava().pushReaction(PushReaction.DESTROY)
+                            .isRedstoneConductor(Blocks::never)));
+    public static final Block SHADOW_birch_LEAVES = registerBlock("shadow_birch_leaves",
+            properties -> new UntintedParticleLeavesBlock(0f, ParticleTypes.PALE_OAK_LEAVES,
+                    properties.mapColor(MapColor.COLOR_RED).strength(0.2F).randomTicks().sound(SoundType.GRASS)
+                            .noOcclusion().isValidSpawn(Blocks::ocelotOrParrot).isSuffocating(Blocks::never)
+                            .isViewBlocking(Blocks::never).ignitedByLava().pushReaction(PushReaction.DESTROY)
+                            .isRedstoneConductor(Blocks::never)));
+    public static final Block BLOOD_oak_LEAVES = registerBlock("blood_oak_leaves",
+            properties -> new UntintedParticleLeavesBlock(0f, ParticleTypes.PALE_OAK_LEAVES,
+                    properties.mapColor(MapColor.COLOR_RED).strength(0.2F).randomTicks().sound(SoundType.GRASS)
+                            .noOcclusion().isValidSpawn(Blocks::ocelotOrParrot).isSuffocating(Blocks::never)
+                            .isViewBlocking(Blocks::never).ignitedByLava().pushReaction(PushReaction.DESTROY)
+                            .isRedstoneConductor(Blocks::never)));
+    public static final Block ASH_BIRCH_LOG = registerBlock("ash_birch_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block WINTER_OAK_FENCE = registerBlock("winter_oak_fence",
+            properties -> new FenceBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block WINTER_OAK_wall = registerBlock("winter_oak_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block ESWELL_BIRCH_PLANKS = registerBlock("eswell_birch_planks",
+            properties -> new Block(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block ESWELL_BIRCH_WALL = registerBlock("eswell_birch_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block ESWELL_BIRCH_FENCE = registerBlock("eswell_birch_fence",
+            properties -> new FenceBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block CORRUPT_BEECH_LOG = registerBlock("corrupt_beech_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+
+
+
+
+
+
+
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();

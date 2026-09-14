@@ -9,8 +9,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
 
 public class RealmCreativeModeTabs {
 
@@ -47,6 +45,15 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmBlocks.MITHRIL_GLOW);
                         output.accept(RealmBlocks.DARK_SOUL_GLOW);
                         output.accept(RealmBlocks.GOLD_LIGHT_GLOW);
+                        output.accept(RealmBlocks.RUDY_CRYSTAL);
+                        output.accept(RealmBlocks.SMALL_CRYSTAL);
+                        output.accept(RealmBlocks.MED1_CRYSTAL);
+                        output.accept(RealmBlocks.STARLACE);
+                        output.accept(RealmBlocks.AZURITE_crystal);
+                        output.accept(RealmBlocks.DEEP_SILVER_STONE);
+                        output.accept(RealmBlocks.DEEP_SILVER_STONE1);
+
+
 
 
 
@@ -57,6 +64,75 @@ public class RealmCreativeModeTabs {
 
                     }).build());
 
+    public static final CreativeModeTab pillar = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"pillar"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.LIGHT_MITHRIL_PILLAR_LOG))
+                    .title(Component.translatable("item.realm.pillar"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmBlocks.LIGHT_MITHRIL_PILLAR_LOG);
+                        output.accept(RealmBlocks.CRYSTAL_PILLAR_LOG);
+                        output.accept(RealmBlocks.DARK_PILLAR_LOG);
+                        output.accept(RealmBlocks.PILLAR_LOG);
+                        output.accept(RealmBlocks.PILLAR1_LOG);
+
+
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final CreativeModeTab crate = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"crate"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.CRATE_LOG))
+                    .title(Component.translatable("item.realm.crate"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmBlocks.CRATE_LOG);
+                        output.accept(RealmBlocks.CRATE1_LOG);
+
+
+
+
+
+
+
+
+
+
+
+                    }).build());
+
+    public static final CreativeModeTab grass = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"grass"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.MITHRIL_BLOCK))
+                    .title(Component.translatable("item.realm.grass"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmBlocks.MITHRIL_BLOCK);
+                        output.accept(RealmBlocks.silver_BLOCK);
+                        output.accept(RealmBlocks.ASH_BLOCK);
+                        output.accept(RealmBlocks.LIGHT_YELLOW_BLOCK);
+                        output.accept(RealmBlocks.DARK_GREEN_BLOCK);
+                        output.accept(RealmBlocks.DARK_GLOW_BLOCK);
+                        output.accept(RealmBlocks.DARK_GLOM_BLOCK);
+
+
+
+
+
+
+
+
+
+
+
+
+                    }).build());
 
     public static final CreativeModeTab MUSHROOM = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"mushroom"),
@@ -69,6 +145,9 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmMushroom.poss_mushroom);
                         output.accept(RealmMushroom.silver_mushroom);
                         output.accept(RealmMushroom.mithril_mushroom);
+                        output.accept(RealmMushroom.small_MUSHROOM);
+                        output.accept(RealmMushroom.med_MUSHROOM);
+                        output.accept(RealmMushroom.DEAD_MUSHROOM);
 
 
 
@@ -121,10 +200,9 @@ public class RealmCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmStone.stone))
                     .title(Component.translatable("item.realm_stone"))
                     .displayItems((parameters, output) -> {
-                        output.accept(RealmStone.WHITE_STONE_2);
                         output.accept(RealmStone.WHITE_STONE_1);
-                        output.accept(RealmStone.WHITE_STONE_HALF);
                         output.accept(RealmStone.WHITE_STONE);
+                        output.accept(RealmStone.stone_block);
                         output.accept(RealmStone.aged_limestone_c);
                         output.accept(RealmStone.red_stone);
                         output.accept(RealmStone.red_stone1);
@@ -151,6 +229,7 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmStone.DARK_SOUL_STONE_RUNE);
                         output.accept(RealmStone.BLACKSTONE1);
                         output.accept(RealmStone.BLACKSTONE2);
+                        output.accept(RealmStone.BLACK_STONE_BLOCK);
                         output.accept(RealmStone.BLACKSTONE1_STAIR);
                         output.accept(RealmStone.stone);
                         output.accept(RealmStone.stone_1);
@@ -167,6 +246,7 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmStone.dark_rock1);
                         output.accept(RealmStone.dark_rock2);
                         output.accept(RealmStone.DARK_STONE_DEEP);
+                        output.accept(RealmStone.DARK_STONE_evil);
                         output.accept(RealmStone.DARK_STONE_DEEP_BRICK);
                         output.accept(RealmStone.DARK_STONE_DEEP_BRICK1);
                         output.accept(RealmStone.DARK_STONE_DEEP1);
@@ -178,11 +258,15 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmStone.STONE_ROCK);
                         output.accept(RealmStone.STONE_ROCK1);
                         output.accept(RealmStone.STONE_ROCK2);
+                        output.accept(RealmStone.STONE_ROCK2_SLAB);
+                        output.accept(RealmStone.STONE_ROCK2_WALL);
+                        output.accept(RealmStone.STONE_ROCK2_1);
                         output.accept(RealmStone.STONE_ROCK_n);
                         output.accept(RealmStone.STONE_ROCK_n1);
                         output.accept(RealmStone.STONE_DEEP_ROCK);
                         output.accept(RealmStone.STONE_DEEP_ROCK1);
                         output.accept(RealmStone.STONEBRICK);
+                        output.accept(RealmStone.deep_black_stone);
 
 
 
@@ -206,6 +290,7 @@ public class RealmCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmItems.BLACKIRON))
                     .title(Component.translatable("item.realm_Item"))
                     .displayItems((parameters, output) -> {
+                        output.accept(RealmItems.AURORA_INGOT);
                         output.accept(RealmItems.BLACKIRON);
                         output.accept(RealmItems.MITHRIL_INGOT);
                         output.accept(RealmItems.SILVER_INGOT);
@@ -215,6 +300,16 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmItems.MAGIC_INGOT);
                         output.accept(RealmItems.MARINE_INGOT);
                         output.accept(RealmItems.DARK_INGOT);
+                        output.accept(RealmItems.UBLESE_INGOT);
+                        output.accept(RealmItems.TIN_INGOT);
+                        output.accept(RealmItems.CRUPT_INGOT);
+                        output.accept(RealmItems.MITHRIL_RUNE_1);
+                        output.accept(RealmItems.FIRE_RUNE);
+                        output.accept(RealmItems.BLACK_RUNE_EVIL);
+                        output.accept(RealmItems.SILVER_RUNE_1);
+                        output.accept(RealmItems.BLACK_STEEL);
+                        output.accept(RealmItems.Silver_hammer);
+
 
 
 
@@ -235,6 +330,9 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmLimestone.light_limestone);
                         output.accept(RealmLimestone.light_limestone1);
                         output.accept(RealmLimestone.light_limestone2);
+                        output.accept(RealmLimestone.light_limestone2_1);
+                        output.accept(RealmLimestone.light_limestone2_2);
+                        output.accept(RealmLimestone.light_lime_PIKE);
                         output.accept(RealmLimestone.limestone);
                         output.accept(RealmLimestone.limestone1);
                         output.accept(RealmLimestone.limestone2);
@@ -243,12 +341,23 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmLimestone.limestone5);
                         output.accept(RealmLimestone.limestone6);
                         output.accept(RealmLimestone.limestone7);
+                        output.accept(RealmLimestone.limestone8);
                         output.accept(RealmLimestone.aged_limestone);
                         output.accept(RealmLimestone.aged_limestone1);
                         output.accept(RealmLimestone.aged_limestone2);
                         output.accept(RealmLimestone.aged_limestone3);
                         output.accept(RealmLimestone.aged_limestone4);
+                        output.accept(RealmLimestone.aged_limestone5);
+                        output.accept(RealmLimestone.aged_limestone_3);
+                        output.accept(RealmLimestone.aged_limestone_brick);
+                        output.accept(RealmLimestone.aged_limestone_brick1);
+                        output.accept(RealmLimestone.aged_limestone_brick2);
+                        output.accept(RealmLimestone.aged_limestone_brick3);
+                        output.accept(RealmLimestone.aged_limestone_block);
+                        output.accept(RealmLimestone.aged_limestone_spike);
+                        output.accept(RealmLimestone.aged_limestone_small);
                         output.accept(RealmLimestone.light_limestone_1);
+
 
 
 
@@ -261,6 +370,25 @@ public class RealmCreativeModeTabs {
 
 
 
+    public static final CreativeModeTab GRANITE = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"granite"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmGranite.granite_rock))
+                    .title(Component.translatable("item.realm_granite"))
+                    .displayItems((parameters, output) -> {
+                       output.accept(RealmGranite.granite_rock);
+                       output.accept(RealmGranite.granite_rock1);
+                       output.accept(RealmGranite.granite_rock2);
+                       output.accept(RealmGranite.granite2_2);
+                       output.accept(RealmGranite.granite2_1);
+                       output.accept(RealmGranite.granite);
+                       output.accept(RealmGranite.granite1);
+                       output.accept(RealmGranite.granite2);
+                       output.accept(RealmGranite.granite3);
+                       output.accept(RealmGranite.granite4);
+                       output.accept(RealmGranite.granite5);
+                       output.accept(RealmGranite.granite6);
+                       output.accept(RealmGranite.granite5_fence);
+                       output.accept(RealmGranite.Granite5_slab);
 
 
 
@@ -269,8 +397,7 @@ public class RealmCreativeModeTabs {
 
 
 
-
-
+                    }).build());
 
 
     public static final CreativeModeTab chalk = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
@@ -281,7 +408,14 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmChalk.chalk);
                         output.accept(RealmChalk.chalk1);
                         output.accept(RealmChalk.chalk2);
+                        output.accept(RealmChalk.chalk3);
+                        output.accept(RealmChalk.chalk4);
+                        output.accept(RealmChalk.chalk4_s);
+                        output.accept(RealmChalk.chalk4_s1);
                         output.accept(RealmChalk.chalk1_2);
+                        output.accept(RealmChalk.chalk_3);
+                        output.accept(RealmChalk.chalk1_3);
+                        output.accept(RealmChalk.chalk0_3);
 
 
 
@@ -349,6 +483,7 @@ public class RealmCreativeModeTabs {
                     .title(Component.translatable("item.realm_runes"))
                     .displayItems((parameters, output) -> {
                         output.accept(Realm_Ruins.MITHRIL_RUNE);
+                        output.accept(Realm_Ruins.MITHRIL_RUNE1);
                         output.accept(Realm_Ruins.SILVER_RUNE);
                         output.accept(Realm_Ruins.DARK_RUNE);
                         output.accept(Realm_Ruins.DARK_RUNE1);
@@ -359,6 +494,11 @@ public class RealmCreativeModeTabs {
                         output.accept(Realm_Ruins.DEEP_STONE_RUNE);
                        output.accept(Realm_Ruins.LIGHT_BIRCH_LOG_RUNE);
                        output.accept(Realm_Ruins.BIRCH_LOG_RUNE);
+                       output.accept(Realm_Ruins.DEEPSLATE_RUNE);
+                       output.accept(Realm_Ruins.DEEPSLATE_RUNE1);
+                       output.accept(Realm_Ruins.DEEPSLATE_RUNE2);
+                       output.accept(RealmBlocks.PILLAR1_rune_LOG);
+                       output.accept(RealmBlocks.PILLAR2_rune_LOG);
 
 
 
@@ -403,6 +543,8 @@ public class RealmCreativeModeTabs {
                     .title(Component.translatable("item.realm_ore"))
                     .displayItems((parameters, output) -> {
                       output.accept(RealmBlocks.MITHRIL_ORE);
+                      output.accept(RealmBlocks.ANORITE_BLOCK);
+                      output.accept(RealmBlocks.ANORITE);
                       output.accept(RealmBlocks.BLACKIRON_SHARDS_BLOCK);
                       output.accept(RealmBlocks.EVIL_SHARDS);
                       output.accept(RealmBlocks.SILVER_ORE);
@@ -414,6 +556,24 @@ public class RealmCreativeModeTabs {
                       output.accept(RealmBlocks.SUN_ORE);
                       output.accept(RealmBlocks.BLACKIRON_ORE);
                       output.accept(RealmBlocks.GRIZZ_ORE);
+                      output.accept(RealmBlocks.UBLESE_ORE);
+                      output.accept(RealmBlocks.TIN_ORE);
+                      output.accept(RealmBlocks.CRUPT_ORE);
+                      output.accept(RealmBlocks.BLACK_steel_ORE);
+                      output.accept(RealmBlocks.SYLVARITE);
+                      output.accept(RealmBlocks.SYLVARITE_BLOCK);
+                      output.accept(RealmBlocks.glizz_BLOCK);
+                      output.accept(RealmBlocks.RAMMER_BLOCK);
+                      output.accept(RealmBlocks.BEIGE_BLOCK);
+                      output.accept(RealmBlocks.AURORA_BLOCK);
+                      output.accept(RealmBlocks.AURORA_crystal);
+                      output.accept(RealmBlocks.CRYSTAlTA_BLOCK);
+                      output.accept(RealmBlocks.crystalta_crystal);
+                      output.accept(RealmBlocks.BERYLUV);
+                      output.accept(RealmBlocks.QUARTZON);
+                      output.accept(RealmBlocks.DAZZLING_CRYSTAL);
+                      output.accept(RealmBlocks.KHROT_BLOCK);
+                      output.accept(RealmBlocks.khrot_crystal);
 
 
 
@@ -424,36 +584,22 @@ public class RealmCreativeModeTabs {
 
                     }).build());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static final CreativeModeTab LOG = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"log"),
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(Realm_logs.WHITE_PINE_LOG))
                     .title(Component.translatable("item.realm_logs"))
                     .displayItems((parameters, output) -> {
+                        output.accept(Realm_logs.CORRUPT_BEECH_LOG);
+                        output.accept(Realm_logs.MAPLEHAVEN_LOG);
+                        output.accept(Realm_logs.WILLOW_BLOOM_LOG);
+                        output.accept(Realm_logs.sorcerers_OAK_LOG);
+                        output.accept(Realm_logs.SILVER_OAK_LOG);
+                        output.accept(Realm_logs.URBAN_LOG);
+                        output.accept(Realm_logs.SPUS_LOG);
+                        output.accept(Realm_logs.GRIM_BIRCH_LOG);
+                        output.accept(Realm_logs.BLUE_SPRUCE_LOG);
                         output.accept(Realm_logs.WHITE_PINE_LOG);
+                        output.accept(Realm_logs.RED_WOOD_LOG);
                         output.accept(Realm_logs.MOSS_OAK_LOG);
                         output.accept(Realm_logs.MITHRIL_LOG);
                         output.accept(Realm_logs.CRYSTAL_OAK_LOG);
@@ -462,6 +608,10 @@ public class RealmCreativeModeTabs {
                         output.accept(Realm_logs.DARK_SOUL_LOG);
                         output.accept(Realm_logs.LIGHT_BIRCH_LOG);
                         output.accept(Realm_logs.ESWELL_BIRCH_LOG);
+                        output.accept(Realm_logs.ESWELL_LEAVES);
+                        output.accept(Realm_logs.ESWELL_BIRCH_PLANKS);
+                        output.accept(Realm_logs.ESWELL_BIRCH_WALL);
+                        output.accept(Realm_logs.ESWELL_BIRCH_FENCE);
                         output.accept(Realm_logs.GOLD_SHADOW_LOG);
                         output.accept(Realm_logs.VEIL_WOOD_LOG);
                         output.accept(Realm_logs.DARK_SOUL_PLANKS);
@@ -470,26 +620,41 @@ public class RealmCreativeModeTabs {
                         output.accept(Realm_logs.SUN_OAK_PLANKS);
                         output.accept(Realm_logs.SUN_OAK_FENCE);
                         output.accept(Realm_logs.BLOOD_OAK_LOG);
+                        output.accept(Realm_logs.BLOOD_oak_LEAVES);
                         output.accept(Realm_logs.WINTER_OAK_PLANKS);
+                        output.accept(Realm_logs.WINTER_OAK_FENCE);
+                        output.accept(Realm_logs.WINTER_OAK_wall);
                         output.accept(Realm_logs.WINTER_OAK_LOG);
                         output.accept(Realm_logs.ASH_OAK_LOG);
+                        output.accept(Realm_logs.ASH_BIRCH_LOG);
                         output.accept(Realm_logs.WINTER_OAK_LEAVES);
                         output.accept(Realm_logs.DARK_SOUL_LEAVES);
                         output.accept(Realm_logs.SUN_OAK_LEAVES);
                         output.accept(Realm_logs.MITHRIL_LEAVES);
                         output.accept(Realm_logs.WHITE_PINE_LEAVES);
+                        output.accept(Realm_logs.WINTER_BIRCH_LOG);
+                        output.accept(Realm_logs.HOLLOW_ELbER_LOG);
                         output.accept(Realm_logs.ANGEL_BIRCH_LOG);
                         output.accept(Realm_logs.BURN_BIRCH_LOG);
+                        output.accept(Realm_logs.BURN_BIRCH_PLANKS);
+                        output.accept(Realm_logs.BURN_BIRCH_fence);
+                        output.accept(Realm_logs.BURN_BIRCH_WALL);
+                        output.accept(Realm_logs.BURN_BIRCH_SLAB);
                         output.accept(Realm_logs.THUNDER_OAK_LOG);
                         output.accept(Realm_logs.ORG_WILLOW_LOG);
                         output.accept(Realm_logs.STARBLOOM_LOG);
                         output.accept(Realm_logs.MOONSHADE_BIRCH_LOG);
                         output.accept(Realm_logs.SHADOW_BIRCH_LOG);
+                        output.accept(Realm_logs.SHADOW_birch_LEAVES);
                         output.accept(Realm_logs.SHADOW_PINE_LOG);
+                        output.accept(Realm_logs.SHADOW_PINE_PLANKS);
+                        output.accept(Realm_logs.SHADOW_PINE_FENCE);
+                        output.accept(Realm_logs.SHADOW_EYE_PINE_LOG);
                         output.accept(Realm_logs.DARK_SOUL_LOG_CHAIN);
                         output.accept(Realm_logs.EMBERIAR_LOG);
                         output.accept(Realm_logs.MISTWOOD_LOG);
                         output.accept(Realm_logs.DEEPCORE_LOG);
+
 
 
 

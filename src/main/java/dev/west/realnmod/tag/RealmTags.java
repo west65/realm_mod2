@@ -13,6 +13,8 @@ public class RealmTags {
     public static class BLOCK {
 
 
+        public static final TagKey <Block> fantasy_grass = createTag("fantasy_grass");
+        public static final TagKey <Block> granite = createTag("granite");
         public static final  TagKey<Block> desert = createTag("desert");
         public static final TagKey<Block> rhyoite = createTag("rhyoite");
         public static final TagKey<Block> CHALK = createTag("chalk");

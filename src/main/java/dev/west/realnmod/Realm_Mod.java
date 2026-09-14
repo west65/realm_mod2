@@ -28,6 +28,7 @@ public class Realm_Mod implements ModInitializer {
 		RealmBlocks.registerModBlocks();
 		RealmChalk.registerModBlocks();
 		RealmMushroom.registerModBlocks();
+		RealmGranite.registerModBlocks();
 		Realm_logs.registerModBlocks();
 		RealmStone.registerModBlocks();
 		RealmDesert.registerModBlocks();

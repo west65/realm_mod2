@@ -1,6 +1,6 @@
 {
   "values": [
-    "realm_mod:white_stone_2",
+    "realm_mod:stone_rock2_slab",
     "realm_mod:stone_rock_n1",
     "realm_mod:stone_rock_n",
     "realm_mod:stone_rock",
@@ -29,6 +29,8 @@
     "realm_mod:deep_stone",
     "realm_mod:deep_stone1",
     "realm_mod:deep_stone2",
+    "realm_mod:deep_black_stone",
+    "realm_mod:dark_stone_evil",
     "realm_mod:rock_stone",
     "realm_mod:stone_brick",
     "realm_mod:stone_brick1",
@@ -76,6 +78,8 @@
     "realm_mod:dark_stone_deep1",
     "realm_mod:stone_brick_m",
     "realm_mod:stone_brick_m1",
+    "realm_mod:deep_silver_stone",
+    "realm_mod:deep_silver_stone1",
     "realm_mod:stone"
   ]
 }

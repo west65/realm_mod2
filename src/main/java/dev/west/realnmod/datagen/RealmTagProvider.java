@@ -23,6 +23,21 @@ public class RealmTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(RealmBlocks.getRK(RealmBlocks.MITHRIL_SHARDS))
                 .add(RealmBlocks.getRK(RealmBlocks.LARGE_MITHRIL_SHARDS))
                 .add(RealmBlocks.getRK(RealmBlocks.VORYN_SHARDS))
+                .add(RealmBlocks.getRK(RealmBlocks.SYLVARITE))
+                .add(RealmBlocks.getRK(RealmBlocks.BERYLUV))
+                .add(RealmBlocks.getRK(RealmBlocks.QUARTZON))
+                .add(RealmBlocks.getRK(RealmBlocks.SYLVARITE_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.glizz_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.RAMMER_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.BEIGE_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.DAZZLING_CRYSTAL))
+                .add(RealmBlocks.getRK(RealmBlocks.ANORITE_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.ANORITE))
+                .add(RealmBlocks.getRK(RealmBlocks.AURORA_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.AURORA_crystal))
+                .add(RealmBlocks.getRK(RealmBlocks.CRYSTAlTA_BLOCK))
+                .add(RealmBlocks.getRK(RealmBlocks.crystalta_crystal))
+                .add(RealmBlocks.getRK(RealmBlocks.KHROT_BLOCK))
 
 
 
@@ -42,10 +57,13 @@ public class RealmTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
 
         tag(BlockTags.IRON_ORES)
+                .add(RealmBlocks.getRK(RealmBlocks.BLACK_steel_ORE))
+                .add(RealmBlocks.getRK(RealmBlocks.UBLESE_ORE))
                 .add(RealmBlocks.getRK(RealmBlocks.GRIZZ_ORE))
                 .add(RealmBlocks.getRK(RealmBlocks.BLACKIRON_ORE))
                 .add(RealmBlocks.getRK(RealmBlocks.SUN_ORE))
                 .add(RealmBlocks.getRK(RealmBlocks.SILVER_ORE))
+                .add(RealmBlocks.getRK(RealmBlocks.TIN_ORE))
                 .add(RealmBlocks.getRK(RealmBlocks.MITHRIL_ORE));
 
 
@@ -75,12 +93,21 @@ public class RealmTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(RealmLimestone.getRK(RealmLimestone.aged_limestone2))
                 .add(RealmLimestone.getRK(RealmLimestone.aged_limestone3))
                 .add(RealmLimestone.getRK(RealmLimestone.aged_limestone4))
+                .add(RealmLimestone.getRK(RealmLimestone.aged_limestone5))
+                .add(RealmLimestone.getRK(RealmLimestone.aged_limestone_brick1))
+                .add(RealmLimestone.getRK(RealmLimestone.aged_limestone_brick2))
+                .add(RealmLimestone.getRK(RealmLimestone.aged_limestone_brick3))
+                .add(RealmLimestone.getRK(RealmLimestone.aged_limestone_brick))
+
                 .add(RealmLimestone.getRK(RealmLimestone.red_limestone));
 
 
 
 
         tag(RealmTags.BLOCK.CHALK)
+                .add(RealmChalk.getRK(RealmChalk.chalk1_3))
+                .add(RealmChalk.getRK(RealmChalk.chalk_3))
+                .add(RealmChalk.getRK(RealmChalk.chalk4))
                 .add(RealmChalk.getRK(RealmChalk.chalk2))
                 .add(RealmChalk.getRK(RealmChalk.chalk1))
                 .add(RealmChalk.getRK(RealmChalk.chalk));
@@ -109,11 +136,44 @@ tag(RealmTags.BLOCK.desert)
 
 
 
+    tag(RealmTags.BLOCK.granite)
+            .add(RealmGranite.getRK(RealmGranite.Granite5_slab))
+            .add(RealmGranite.getRK(RealmGranite.granite5))
+            .add(RealmGranite.getRK(RealmGranite.granite4))
+            .add(RealmGranite.getRK(RealmGranite.granite3))
+            .add(RealmGranite.getRK(RealmGranite.granite))
+            .add(RealmGranite.getRK(RealmGranite.granite2))
+            .add(RealmGranite.getRK(RealmGranite.granite_rock1))
+            .add(RealmGranite.getRK(RealmGranite.granite_rock));
+
+
+
+
+    tag(BlockTags.SLABS)
+            .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_SLAB))
+            .add(RealmStone.getRK(RealmStone.STONE_ROCK2_SLAB))
+            .add(RealmLimestone.getRK(RealmLimestone.light_limestone2_1))
+            .add(RealmGranite.getRK(RealmGranite.granite2_1))
+            .add(RealmChalk.getRK(RealmChalk.chalk0_3))
+            .add(RealmChalk.getRK(RealmChalk.chalk1_3));
+
+
+
+
+    tag(BlockTags.WALLS)
+            .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_WALL))
+            .add(Realm_logs.getRK(Realm_logs.WINTER_OAK_wall))
+            .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_WALL))
+            .add(RealmStone.getRK(RealmStone.STONE_ROCK2_WALL));
+
+
+
+
 
 
 
         tag(RealmTags.BLOCK.STONE)
-                .add(RealmStone.getRK(RealmStone.WHITE_STONE_2))
+                .add(RealmStone.getRK(RealmStone.STONE_ROCK2_SLAB))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK_n1))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK_n))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK))
@@ -142,6 +202,8 @@ tag(RealmTags.BLOCK.desert)
                 .add(RealmStone.getRK(RealmStone.deep_stone))
                 .add(RealmStone.getRK(RealmStone.deep_stone1))
                 .add(RealmStone.getRK(RealmStone.deep_stone2))
+                .add(RealmStone.getRK(RealmStone.deep_black_stone))
+                .add(RealmStone.getRK(RealmStone.DARK_STONE_evil))
                 .add(RealmStone.getRK(RealmStone.rock_stone))
                 .add(RealmStoneBrick.getRK(RealmStoneBrick.stone_Brick))
                 .add(RealmStoneBrick.getRK(RealmStoneBrick.stone_Brick1))
@@ -189,6 +251,8 @@ tag(RealmTags.BLOCK.desert)
                 .add(RealmStone.getRK(RealmStone.DARK_STONE_DEEP1))
                 .add(RealmStone.getRK(RealmStone.stone_brick_m))
                 .add(RealmStone.getRK(RealmStone.stone_brick_m1))
+                .add(RealmBlocks.getRK(RealmBlocks.DEEP_SILVER_STONE))
+                .add(RealmBlocks.getRK(RealmBlocks.DEEP_SILVER_STONE1))
                 .add(RealmStone.getRK(RealmStone.stone));
 
 
@@ -196,13 +260,23 @@ tag(RealmTags.BLOCK.desert)
 
 
        tag(BlockTags.MINEABLE_WITH_AXE)
+               .add(Realm_logs.getRK(Realm_logs.BLUE_SPRUCE_LOG))
+               .add(Realm_logs.getRK(Realm_logs.RED_WOOD_LOG))
+               .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_FENCE))
+               .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_WALL))
+               .add(Realm_logs.getRK(Realm_logs.WINTER_OAK_wall))
+               .add(Realm_logs.getRK(Realm_logs.WINTER_OAK_FENCE))
+               .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_SLAB))
                .add(Realm_logs.getRK(Realm_logs.ALDER_LOG))
+               .add(Realm_logs.getRK(Realm_logs.SPUS_LOG))
+               .add(Realm_logs.getRK(Realm_logs.URBAN_LOG))
                .add(Realm_logs.getRK(Realm_logs.VEIL_WOOD_LOG))
                .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_LOG))
                .add(Realm_logs.getRK(Realm_logs.LIGHT_BIRCH_LOG))
                .add(Realm_logs.getRK(Realm_logs.DARK_SOUL_LOG))
                .add(Realm_logs.getRK(Realm_logs.MITHRIL_LOG))
                .add(Realm_logs.getRK(Realm_logs.MITHRIL_LEAVES))
+               .add(Realm_logs.getRK(Realm_logs.ESWELL_LEAVES))
                .add(Realm_logs.getRK(Realm_logs.GOLDEN_PINE_LOG))
                .add(Realm_logs.getRK(Realm_logs.DARK_SOUL_LEAVES))
                .add(Realm_logs.getRK(Realm_logs.BLOOD_OAK_LOG))
@@ -214,13 +288,24 @@ tag(RealmTags.BLOCK.desert)
                .add(Realm_logs.getRK(Realm_logs.MISTWOOD_LOG))
                .add(Realm_logs.getRK(Realm_logs.DEEPCORE_LOG))
                .add(Realm_logs.getRK(Realm_logs.SHADOW_BIRCH_LOG))
+               .add(Realm_logs.getRK(Realm_logs.SHADOW_birch_LEAVES))
+               .add(Realm_logs.getRK(Realm_logs.GRIM_BIRCH_LOG))
                .add(Realm_logs.getRK(Realm_logs.ANGEL_BIRCH_LOG));
 
 
 
 
        tag(BlockTags.FENCES)
+               .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_FENCE))
+               .add(Realm_logs.getRK(Realm_logs.WINTER_OAK_FENCE))
+               .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_fence))
+               .add(Realm_logs.getRK(Realm_logs.SHADOW_PINE_FENCE))
+               .add(RealmGranite.getRK(RealmGranite.granite5_fence))
+               .add(RealmLimestone.getRK(RealmLimestone.light_limestone2_2))
+               .add(RealmGranite.getRK(RealmGranite.granite2_2))
+               .add(RealmChalk.getRK(RealmChalk.chalk4_s1))
                .add(Realm_logs.getRK(Realm_logs.SUN_OAK_FENCE));
+
 
 
 
@@ -251,10 +336,17 @@ tag(RealmTags.BLOCK.desert)
 
 
 
-
-
-
                   tag(BlockTags.LOGS)
+                          .add(Realm_logs.getRK(Realm_logs.CORRUPT_BEECH_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.MAPLEHAVEN_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.WILLOW_BLOOM_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.sorcerers_OAK_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.SILVER_OAK_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_SLAB))
+                          .add(Realm_logs.getRK(Realm_logs.ASH_BIRCH_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.HOLLOW_ELbER_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.WINTER_BIRCH_LOG))
+                          .add(Realm_logs.getRK(Realm_logs.SHADOW_EYE_PINE_LOG))
               .add(Realm_logs.getRK(Realm_logs.SHADOW_PINE_LOG))
               .add(Realm_logs.getRK(Realm_logs.ALDER_LOG))
               .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_LOG))
@@ -282,6 +374,28 @@ tag(RealmTags.BLOCK.desert)
 
 
 
+      tag(BlockTags.GRASS_BLOCKS)
+              .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOM_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOW_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.DARK_GREEN_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.LIGHT_YELLOW_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.ASH_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.silver_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.MITHRIL_BLOCK));
+
+
+
+      tag(RealmTags.BLOCK.fantasy_grass)
+              .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOM_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOW_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.DARK_GREEN_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.LIGHT_YELLOW_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.MITHRIL_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.ASH_BLOCK))
+              .add(RealmBlocks.getRK(RealmBlocks.silver_BLOCK));
+
+
+
       tag(BlockTags.STAIRS)
               .add(Realm_logs.getRK(Realm_logs.DARK_SOUL_STAIRS));
 
@@ -294,6 +408,8 @@ tag(RealmTags.BLOCK.desert)
 
 
                   tag(BlockTags.PLANKS)
+                          .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_PLANKS))
+                          .add(Realm_logs.getRK(Realm_logs.SHADOW_PINE_PLANKS))
               .add(Realm_logs.getRK(Realm_logs.WINTER_OAK_PLANKS))
               .add(Realm_logs.getRK(Realm_logs.SUN_OAK_PLANKS))
               .add(Realm_logs.getRK(Realm_logs.DARK_SOUL_PLANKS));

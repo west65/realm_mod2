@@ -2,7 +2,6 @@ package dev.west.realnmod.block;
 
 import dev.west.realnmod.RealmLayers;
 import dev.west.realnmod.Realm_Mod;
-import dev.west.realnmod.block.custom.RealmHalf;
 import dev.west.realnmod.block.custom.RealmSlab;
 import dev.west.realnmod.block.custom.RealmSupportBeam;
 import net.minecraft.core.Registry;
@@ -46,6 +45,9 @@ public class RealmStone {
     public static final Block stone2 = registerBlock("stone2",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block stone_block = registerBlock("stone_block",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE).noOcclusion()));
     public static final Block stone_1 = registerBlock("stone_1",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -60,6 +62,9 @@ public class RealmStone {
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block dark_stone = registerBlock("dark_stone",
             properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block deep_black_stone = registerBlock("deep_black_stone",
+            properties -> new Block(properties.strength(4.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block dark_stone1 = registerBlock("dark_stone1",
             properties -> new Block(properties.strength(1.0F)
@@ -97,6 +102,9 @@ public class RealmStone {
     public static final Block BLACKSTONE2 = registerBlock("blackstone2",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block BLACK_STONE_BLOCK = registerBlock("black_stone_block",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE).noOcclusion()));
    public static final Block BLACKSTONE1_STAIR = registerBlock("blackstone1_stair",
            properties -> new StairBlock(RealmStone.BLACKSTONE1.defaultBlockState(),
                    properties.strength(3f).requiresCorrectToolForDrops()));
@@ -157,6 +165,9 @@ public class RealmStone {
     public static final Block DARK_STONE_DEEP = registerBlock("dark_stone_deep",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block DARK_STONE_evil = registerBlock("dark_stone_evil",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block DARK_STONE_DEEP_BRICK = registerBlock("dark_stone_deep_brick",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -199,11 +210,14 @@ public class RealmStone {
     public static final Block WHITE_STONE_1 = registerBlock("white_stone_1",
             properties -> new RealmLayers(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final Block WHITE_STONE_2 = registerBlock("white_stone_2",
+    public static final Block STONE_ROCK2_1 = registerBlock("stone_rock2_1",
             properties -> new RealmLayers(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final Block WHITE_STONE_HALF = registerBlock("white_stone_half",
-            properties -> new RealmHalf(properties.strength(1.0F)
+    public static final Block STONE_ROCK2_SLAB = registerBlock("stone_rock2_slab",
+            properties -> new SlabBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block STONE_ROCK2_WALL = registerBlock("stone_rock2_wall",
+            properties -> new WallBlock(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static ResourceKey<Block> getRK(Block block) {

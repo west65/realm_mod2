@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.MushroomBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -38,6 +39,19 @@ public class RealmMushroom {
     public static final Block mithril_mushroom = registerBlock("mithril_mushroom",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK).lightLevel(state -> 8)));
+    public static final Block small_MUSHROOM = registerBlock("small_mushroom",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK).lightLevel(state -> 8).noOcclusion()));
+    public static final Block med_MUSHROOM = registerBlock("med_mushroom",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK).lightLevel(state -> 8).noOcclusion()));
+    public static final Block DEAD_MUSHROOM = registerBlock("dead_mushroom",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK).noOcclusion()));
+
+
+
+
 
 
     public static ResourceKey<Block> getRK(Block block) {

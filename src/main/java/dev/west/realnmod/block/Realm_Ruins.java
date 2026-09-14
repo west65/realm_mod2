@@ -19,7 +19,12 @@ import java.util.function.Function;
 public class Realm_Ruins {
 
 
+
+    //RUNES
     public static final Block MITHRIL_RUNE = registerBlock("mithril_rune",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block MITHRIL_RUNE1 = registerBlock("mithril_rune1",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block SILVER_RUNE = registerBlock("silver_rune",
@@ -52,6 +57,16 @@ public class Realm_Ruins {
     public static final Block BIRCH_LOG_RUNE = registerBlock("birch_log_rune",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block DEEPSLATE_RUNE = registerBlock("deepslate_rune",
+            properties -> new Block(properties.mapColor(MapColor.STONE).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block DEEPSLATE_RUNE1 = registerBlock("deepslate_rune1",
+            properties -> new Block(properties.mapColor(MapColor.STONE).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block DEEPSLATE_RUNE2 = registerBlock("deepslate_rune2",
+            properties -> new Block(properties.mapColor(MapColor.STONE).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+
 
 
     public static ResourceKey<Block> getRK(Block block) {

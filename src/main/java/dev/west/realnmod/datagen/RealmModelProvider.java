@@ -11,6 +11,7 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.minecraft.core.Direction;
+
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
@@ -39,6 +40,17 @@ public class RealmModelProvider extends FabricModelProvider {
         var realm8 = blockModelGenerators.family(RealmStoneBrick.stone_Brick_9);
         var realm9 = blockModelGenerators.family(Realm_logs.SUN_OAK_PLANKS);
         var realm10 = blockModelGenerators.family(RealmStoneBrick.stone_Brick_2);
+        var realm11 = blockModelGenerators.family(RealmChalk.chalk_3);
+        var realm12 = blockModelGenerators.family(RealmChalk.chalk3);
+        var realm13 = blockModelGenerators.family(RealmChalk.chalk4);
+        var realm14 = blockModelGenerators.family(RealmGranite.granite2);
+        var realm15 = blockModelGenerators.family(RealmLimestone.light_limestone2);
+        var realm16 = blockModelGenerators.family(RealmGranite.granite5);
+        var realm17 = blockModelGenerators.family(Realm_logs.SHADOW_PINE_PLANKS);
+        var realm18 = blockModelGenerators.family(Realm_logs.BURN_BIRCH_PLANKS);
+        var realm19 = blockModelGenerators.family(RealmStone.STONE_ROCK2);
+        var realm20 = blockModelGenerators.family(Realm_logs.WINTER_OAK_PLANKS);
+        var realm21 = blockModelGenerators.family(Realm_logs.ESWELL_BIRCH_PLANKS);
 
 
 
@@ -58,12 +70,26 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
-
+//ore
         blockModelGenerators.createTrivialCube(RealmBlocks.MITHRIL_ORE);
         blockModelGenerators.createTrivialCube(RealmBlocks.SILVER_ORE);
         blockModelGenerators.createTrivialCube(RealmBlocks.SUN_ORE);
         blockModelGenerators.createTrivialCube(RealmBlocks.BLACKIRON_ORE);
         blockModelGenerators.createTrivialCube(RealmBlocks.GRIZZ_ORE);
+        blockModelGenerators.createTrivialCube(RealmBlocks.UBLESE_ORE);
+        blockModelGenerators.createTrivialCube(RealmBlocks.TIN_ORE);
+        blockModelGenerators.createTrivialCube(RealmBlocks.CRUPT_ORE);
+        blockModelGenerators.createTrivialCube(RealmBlocks.BLACK_steel_ORE);
+
+
+
+
+
+
+
+
+        blockModelGenerators.createTrivialCube(RealmBlocks.DEEP_SILVER_STONE);
+        blockModelGenerators.createTrivialCube(RealmBlocks.DEEP_SILVER_STONE1);
 
 
 
@@ -77,7 +103,7 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
-
+//logs
         blockModelGenerators.woodProvider(Realm_logs.WHITE_PINE_LOG).log(Realm_logs.WHITE_PINE_LOG);
         blockModelGenerators.woodProvider(Realm_logs.MOSS_OAK_LOG).log(Realm_logs.MOSS_OAK_LOG);
         blockModelGenerators.woodProvider(Realm_logs.MITHRIL_LOG).log(Realm_logs.MITHRIL_LOG);
@@ -106,10 +132,37 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.woodProvider(Realm_logs.STARBLOOM_LOG).log(Realm_logs.STARBLOOM_LOG);
         blockModelGenerators.woodProvider(Realm_logs.ALDER_LOG).log(Realm_logs.ALDER_LOG);
         blockModelGenerators.woodProvider(Realm_logs.SHADOW_PINE_LOG).log(Realm_logs.SHADOW_PINE_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.GRIM_BIRCH_LOG).log(Realm_logs.GRIM_BIRCH_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.SPUS_LOG).log(Realm_logs.SPUS_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.URBAN_LOG).log(Realm_logs.URBAN_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.SHADOW_EYE_PINE_LOG).log(Realm_logs.SHADOW_EYE_PINE_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.WINTER_BIRCH_LOG).log(Realm_logs.WINTER_BIRCH_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.HOLLOW_ELbER_LOG).log(Realm_logs.HOLLOW_ELbER_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.ASH_BIRCH_LOG).log(Realm_logs.ASH_BIRCH_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.RED_WOOD_LOG).log(Realm_logs.RED_WOOD_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.BLUE_SPRUCE_LOG).log(Realm_logs.BLUE_SPRUCE_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.SILVER_OAK_LOG).log(Realm_logs.SILVER_OAK_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.sorcerers_OAK_LOG).log(Realm_logs.sorcerers_OAK_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.WILLOW_BLOOM_LOG).log(Realm_logs.WILLOW_BLOOM_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.MAPLEHAVEN_LOG).log(Realm_logs.MAPLEHAVEN_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.CORRUPT_BEECH_LOG).log(Realm_logs.CORRUPT_BEECH_LOG);
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    //crystal
         blockModelGenerators.createAmethystCluster(RealmBlocks.BLACKIRON_SHARDS_BLOCK);
         blockModelGenerators.createAmethystCluster(RealmBlocks.EVIL_SHARDS);
         blockModelGenerators.createAmethystCluster(RealmBlocks.MITHRIL_SHARDS);
@@ -117,12 +170,31 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createAmethystCluster(RealmBlocks.MED_MITHRIL_SHARDS);
         blockModelGenerators.createAmethystCluster(RealmBlocks.BLACK_POSS_SHARDS);
         blockModelGenerators.createAmethystCluster(RealmBlocks.VORYN_SHARDS);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.SYLVARITE);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.BERYLUV);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.QUARTZON);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.DAZZLING_CRYSTAL);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.ANORITE);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.AURORA_crystal);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.crystalta_crystal);
+        blockModelGenerators.createAmethystCluster(RealmBlocks.khrot_crystal);
+
+
+//crystal block
+        blockModelGenerators.createTrivialCube(RealmBlocks.SYLVARITE_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.glizz_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.RAMMER_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.BEIGE_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.ANORITE_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.AURORA_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.CRYSTAlTA_BLOCK);
+        blockModelGenerators.createTrivialCube(RealmBlocks.KHROT_BLOCK);
 
 
 
 
 
-
+//limestone
         blockModelGenerators.createTrivialCube(RealmLimestone.red_limestone);
         blockModelGenerators.createTrivialCube(RealmLimestone.limestone);
         blockModelGenerators.createTrivialCube(RealmLimestone.limestone1);
@@ -132,14 +204,47 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmLimestone.limestone5);
         blockModelGenerators.createTrivialCube(RealmLimestone.limestone6);
         blockModelGenerators.createTrivialCube(RealmLimestone.limestone7);
+        blockModelGenerators.createTrivialCube(RealmLimestone.limestone8);
         blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone);
         blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone1);
         blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone2);
         blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone3);
         blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone4);
+        blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone5);
+        blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone_brick);
+        blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone_brick1);
+        blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone_brick2);
+        blockModelGenerators.createTrivialCube(RealmLimestone.aged_limestone_brick3);
         blockModelGenerators.createTrivialCube(RealmLimestone.light_limestone);
         blockModelGenerators.createTrivialCube(RealmLimestone.light_limestone1);
-        blockModelGenerators.createTrivialCube(RealmLimestone.light_limestone2);
+
+
+
+        realm15.slab(RealmLimestone.light_limestone2_1);
+
+
+
+
+        realm19.slab(RealmStone.STONE_ROCK2_SLAB);
+
+        realm19.wall(RealmStone.STONE_ROCK2_WALL);
+
+
+        realm18.wall(Realm_logs.BURN_BIRCH_WALL);
+
+
+
+
+        realm18.slab(Realm_logs.BURN_BIRCH_SLAB);
+
+
+
+
+        realm21.wall(Realm_logs.ESWELL_BIRCH_WALL);
+
+
+        realm21.fence(Realm_logs.ESWELL_BIRCH_FENCE);
+
 
 
 
@@ -161,6 +266,14 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
+
+
+
+
+
+        realm11.slab(RealmChalk.chalk1_3);
+        realm12.slab(RealmChalk.chalk0_3);
+        realm13.slab(RealmChalk.chalk4_s);
 
 
         blockModelGenerators.createTrivialCube(RealmDesert.desert_stone);
@@ -195,7 +308,9 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialBlock(Realm_logs.SUN_OAK_LEAVES, TexturedModel.LEAVES);
         blockModelGenerators.createTrivialBlock(Realm_logs.MITHRIL_LEAVES, TexturedModel.LEAVES);
         blockModelGenerators.createTrivialBlock(Realm_logs.WHITE_PINE_LEAVES, TexturedModel.LEAVES);
-
+        blockModelGenerators.createTrivialBlock(Realm_logs.ESWELL_LEAVES, TexturedModel.LEAVES);
+        blockModelGenerators.createTrivialBlock(Realm_logs.SHADOW_birch_LEAVES, TexturedModel.LEAVES);
+        blockModelGenerators.createTrivialBlock(Realm_logs.BLOOD_oak_LEAVES, TexturedModel.LEAVES);
 
 
         blockModelGenerators.createTrivialCube(RealmMushroom.angel_mushroom);
@@ -210,7 +325,7 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
-        blockModelGenerators.createTrivialCube(Realm_logs.WINTER_OAK_PLANKS);
+
 
 
         blockModelGenerators.createCropBlock(RealmBlocks.GOATFEED_CROP, CropBlock.AGE, 0,1,2,3,4,5,6,7);
@@ -222,7 +337,10 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
+        realm14.fence(RealmGranite.granite2_2);
         realm9.fence(Realm_logs.SUN_OAK_FENCE);
+        realm12.fence(RealmChalk.chalk4_s1);
+        realm15.fence(RealmLimestone.light_limestone2_2);
 
 
 
@@ -242,6 +360,13 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmBlocks.MITHRIL_GLOW);
         blockModelGenerators.createTrivialCube(RealmBlocks.DARK_SOUL_GLOW);
         blockModelGenerators.createTrivialCube(RealmBlocks.GOLD_LIGHT_GLOW);
+
+
+
+
+
+
+
 
 
 
@@ -275,14 +400,27 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmStone.rock_stone);
         blockModelGenerators.createTrivialCube(RealmStone.deep_stone);
         blockModelGenerators.createTrivialCube(RealmStone.deep_stone1);
+        blockModelGenerators.createTrivialCube(RealmStone.deep_black_stone);
+        blockModelGenerators.createTrivialCube(RealmStone.DARK_STONE_evil);
         blockModelGenerators.createTrivialCube(RealmStone.DARK_STONE_DEEP);
         blockModelGenerators.createTrivialCube(RealmStone.DARK_STONE_DEEP_BRICK);
         blockModelGenerators.createTrivialCube(RealmStone.DARK_STONE_DEEP_BRICK1);
         blockModelGenerators.createTrivialCube(RealmStone.dark_stonebrick);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK1);
-        blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK2);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK_n);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK_n1);
+
+
+
+
+        blockModelGenerators.createTrivialCube(RealmGranite.granite_rock);
+        blockModelGenerators.createTrivialCube(RealmGranite.granite_rock1);
+        blockModelGenerators.createTrivialCube(RealmGranite.granite_rock2);
+
+        blockModelGenerators.createTrivialCube(RealmGranite.granite);
+        blockModelGenerators.createTrivialCube(RealmGranite.granite3);
+        blockModelGenerators.createTrivialCube(RealmGranite.granite4);
+
 
 
 
@@ -305,6 +443,7 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmStone.DARK_SOUL_STONE_RUNE);
         blockModelGenerators.createTrivialCube(Realm_Ruins.STONE_RUNE);
         blockModelGenerators.createTrivialCube(Realm_Ruins.DEEP_STONE_RUNE);
+        blockModelGenerators.createTrivialCube(Realm_Ruins.MITHRIL_RUNE1);
 
 
 
@@ -315,19 +454,36 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
+        realm14.slab(RealmGranite.granite2_1);
+
+
+
 
         realm4.slab(RealmStone.MITHRIL_STONE_SLAB);
 
 
+        realm20.fence(Realm_logs.WINTER_OAK_FENCE);
+
+
+        realm20.wall(Realm_logs.WINTER_OAK_wall);
+
+
 
        realm3.stairs(RealmStone.BLACKSTONE1_STAIR);
+
+       realm16.slab(RealmGranite.Granite5_slab);
+
+
+
+       realm16.fence(RealmGranite.granite5_fence);
+       realm17.fence(Realm_logs.SHADOW_PINE_FENCE);
+       realm18.fence(Realm_logs.BURN_BIRCH_fence);
 
        blockModelGenerators.createTrivialCube(RealmStone.BLACKSTONE2);
 
 
 
 
-       blockModelGenerators.createTrivialCube(RealmStone.WHITE_STONE_2);
         blockModelGenerators.createTrivialCube(RealmStoneBrick.stone_Brick);
         blockModelGenerators.createTrivialCube(RealmStoneBrick.stone_Brick1);
         blockModelGenerators.createTrivialCube(RealmStoneBrick.stone_Brick2);
@@ -385,6 +541,7 @@ public class RealmModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(RealmItems.DARK_APPLE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(RealmItems.SILVER_APPLE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RealmItems.AURORA_INGOT, ModelTemplates.FLAT_ITEM);
 
 
 

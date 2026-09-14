@@ -10,6 +10,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -34,7 +36,27 @@ public class RealmChalk {
     public static final Block chalk1_2 = registerBlock("chalk1_2",
             properties -> new RealmLayers(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
+    public static final Block chalk3 = registerBlock("chalk3",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block chalk4 = registerBlock("chalk4",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block chalk4_s = registerBlock("chalk_s",
+            properties -> new SlabBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block chalk4_s1 = registerBlock("chalk4_s1",
+            properties -> new FenceBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block chalk_3 = registerBlock("chalk_3",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block chalk1_3 = registerBlock("chalk1_3",
+            properties -> new SlabBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block chalk0_3 = registerBlock("chalk0_3",
+            properties -> new SlabBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
 
