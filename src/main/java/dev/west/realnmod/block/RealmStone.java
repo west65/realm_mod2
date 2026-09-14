@@ -18,6 +18,15 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.function.Function;
 
 public class RealmStone {
+    public static final Block AGED_STONE = registerBlock("aged_stone",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block AGED_STONE_SLAB = registerBlock("aged_stone_slab",
+            properties -> new SlabBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block AGED_STONE_1 = registerBlock("aged_stone_1",
+            properties -> new RealmLayers(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block aged_limestone_c = registerBlock("aged_limestone_c",
             properties -> new RealmSlab(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));

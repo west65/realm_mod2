@@ -40,7 +40,9 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
 
 
 
-
+        translationBuilder.add("block.realm_mod.aged_stone_1", "aged_stone_1");
+        translationBuilder.add("block.realm_mod.aged_stone_slab", "aged_stone_slab");
+        translationBuilder.add("block.realm_mod.aged_stone", "aged_stone");
         translationBuilder.add("block.realm_mod.stone_brick5", "stone_brick5");
         translationBuilder.add("block.realm_mod.stone_brick4", "stone_brick4");
         translationBuilder.add("block.realm_mod.stone_brick_m1", "stone_brick_m1");
@@ -123,6 +125,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.stone_brick_11", "stone_brick_11");
         translationBuilder.add("block.realm_mod.stone_brick_11_slab", "stone_brick_11_slab");
         translationBuilder.add("block.realm_mod.white_stone", "white_stone");
+        translationBuilder.add("block.realm_mod.white_stone_1", "white_stone_1");
         translationBuilder.add("block.realm_mod.white_stone_half", "white_stone_half");
         translationBuilder.add("block.realm_mod.white_stone2", "white_stone2");
 
@@ -281,6 +284,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.dark_glow_block", "dark_glow_block");
         translationBuilder.add("block.realm_mod.dark_glom_block", "dark_glom_block");
         translationBuilder.add("block.realm_mod.light_gray_block", "light_gray_block");
+        translationBuilder.add("block.realm_mod.light_org_block", "light_org_block");
 
         translationBuilder.add("block.realm_mod.crate_log", "crate_log");
         translationBuilder.add("block.realm_mod.crate1_log", "crate1_log");
@@ -403,7 +407,6 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.realm_tuff", "tuff");
         translationBuilder.add("item.realm_mushroom", "mushroom");
         translationBuilder.add("item.realm_ore", "ore");
-        translationBuilder.add("item.realm_grass", "grass");
         translationBuilder.add("item.realm_logs", "logs");
         translationBuilder.add("item.realm_limestone", "limestone");
         translationBuilder.add("item.realm_light_limestone", "light_limestone");
@@ -413,7 +416,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.realm_granite", "granite");
         translationBuilder.add("item.realm.pillar", "pillar");
         translationBuilder.add("item.realm.crate", "crate");
-
+        translationBuilder.add("item.realm.grass", "grass");
 
 
 

@@ -150,6 +150,7 @@ tag(RealmTags.BLOCK.desert)
 
 
     tag(BlockTags.SLABS)
+            .add(RealmStone.getRK(RealmStone.AGED_STONE_SLAB))
             .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_SLAB))
             .add(RealmStone.getRK(RealmStone.STONE_ROCK2_SLAB))
             .add(RealmLimestone.getRK(RealmLimestone.light_limestone2_1))
@@ -173,6 +174,7 @@ tag(RealmTags.BLOCK.desert)
 
 
         tag(RealmTags.BLOCK.STONE)
+                .add(RealmStone.getRK(RealmStone.AGED_STONE))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK2_SLAB))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK_n1))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK_n))
@@ -375,6 +377,7 @@ tag(RealmTags.BLOCK.desert)
 
 
       tag(BlockTags.GRASS_BLOCKS)
+              .add(RealmBlocks.getRK(RealmBlocks.LIGHT_ORG_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.LIGHT_GRAY_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOM_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOW_BLOCK))
@@ -387,6 +390,7 @@ tag(RealmTags.BLOCK.desert)
 
 
       tag(RealmTags.BLOCK.fantasy_grass)
+              .add(RealmBlocks.getRK(RealmBlocks.LIGHT_ORG_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.LIGHT_GRAY_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOM_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOW_BLOCK))

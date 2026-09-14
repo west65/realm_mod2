@@ -155,6 +155,7 @@ public class RealmLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(RealmBlocks.DARK_GLOW_BLOCK);
         dropSelf(RealmBlocks.DARK_GLOM_BLOCK);
         dropSelf(RealmBlocks.LIGHT_GRAY_BLOCK);
+        dropSelf(RealmBlocks.LIGHT_ORG_BLOCK);
 
 
 
@@ -290,8 +291,9 @@ public class RealmLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(RealmMushroom.DEAD_MUSHROOM);
 
 
-
-
+        dropSelf(RealmStone.AGED_STONE);
+        dropSelf(RealmStone.AGED_STONE_SLAB);
+        dropSelf(RealmStone.AGED_STONE_1);
         dropSelf(RealmStone.stone_block);
         dropSelf(RealmStone.stone);
         dropSelf(RealmStone.stone1);

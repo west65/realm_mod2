@@ -204,7 +204,8 @@ public class RealmBlocks {
             properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_GREEN).lightLevel(statex-> 8).requiresCorrectToolForDrops()));
     public static final Block LIGHT_GRAY_BLOCK = registerBlock("light_gray_block",
             properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_GRAY).lightLevel(statex-> 8).requiresCorrectToolForDrops()));
-
+    public static final Block LIGHT_ORG_BLOCK = registerBlock("light_org_block",
+            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_GRAY).lightLevel(statex-> 10).requiresCorrectToolForDrops()));
 
 
     public static ResourceKey<Block> getRK(Block block) {

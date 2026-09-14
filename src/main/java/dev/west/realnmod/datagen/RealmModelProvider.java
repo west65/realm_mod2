@@ -51,6 +51,7 @@ public class RealmModelProvider extends FabricModelProvider {
         var realm19 = blockModelGenerators.family(RealmStone.STONE_ROCK2);
         var realm20 = blockModelGenerators.family(Realm_logs.WINTER_OAK_PLANKS);
         var realm21 = blockModelGenerators.family(Realm_logs.ESWELL_BIRCH_PLANKS);
+        var realm22 = blockModelGenerators.family(RealmStone.AGED_STONE);
 
 
 
@@ -223,6 +224,7 @@ public class RealmModelProvider extends FabricModelProvider {
         realm15.slab(RealmLimestone.light_limestone2_1);
 
 
+        realm22.slab(RealmStone.AGED_STONE_SLAB);
 
 
         realm19.slab(RealmStone.STONE_ROCK2_SLAB);
@@ -360,6 +362,7 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmBlocks.MITHRIL_GLOW);
         blockModelGenerators.createTrivialCube(RealmBlocks.DARK_SOUL_GLOW);
         blockModelGenerators.createTrivialCube(RealmBlocks.GOLD_LIGHT_GLOW);
+
 
 
 

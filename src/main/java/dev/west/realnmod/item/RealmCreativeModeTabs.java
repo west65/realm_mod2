@@ -122,6 +122,7 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmBlocks.DARK_GLOW_BLOCK);
                         output.accept(RealmBlocks.DARK_GLOM_BLOCK);
                         output.accept(RealmBlocks.LIGHT_GRAY_BLOCK);
+                        output.accept(RealmBlocks.LIGHT_ORG_BLOCK);
 
 
 
@@ -202,6 +203,9 @@ public class RealmCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmStone.stone))
                     .title(Component.translatable("item.realm_stone"))
                     .displayItems((parameters, output) -> {
+                        output.accept(RealmStone.AGED_STONE);
+                        output.accept(RealmStone.AGED_STONE_SLAB);
+                        output.accept(RealmStone.AGED_STONE_1);
                         output.accept(RealmStone.WHITE_STONE_1);
                         output.accept(RealmStone.WHITE_STONE);
                         output.accept(RealmStone.stone_block);
