@@ -74,6 +74,7 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmBlocks.DARK_PILLAR_LOG);
                         output.accept(RealmBlocks.PILLAR_LOG);
                         output.accept(RealmBlocks.PILLAR1_LOG);
+                        output.accept(RealmBlocks.DESERT_PILLAR_LOG);
 
 
 

@@ -261,6 +261,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.light_mithril_pillar_log", "light_mithril_pillar_log");
         translationBuilder.add("block.realm_mod.crystal_pillar_log", "crystal_pillar_log");
         translationBuilder.add("block.realm_mod.dark_pillar_log", "dark_pillar_log");
+        translationBuilder.add("block.realm_mod.desert_pillar_log", "desert_pillar_log");
         translationBuilder.add("block.realm_mod.pillar_log", "pillar_log");
         translationBuilder.add("block.realm_mod.pillar1_log", "pillar1_log");
         translationBuilder.add("block.realm_mod.pillar1_rune_log", "pillar1_rune_log");
@@ -412,7 +413,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.realm_granite", "granite");
         translationBuilder.add("item.realm.pillar", "pillar");
         translationBuilder.add("item.realm.crate", "crate");
-        translationBuilder.add("item.realm.grass", "grass");
+
 
 
 

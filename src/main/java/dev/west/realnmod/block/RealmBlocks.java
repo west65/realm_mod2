@@ -160,7 +160,9 @@ public class RealmBlocks {
     public static final Block PILLAR1_LOG = registerBlock("pillar1_log",
             properties -> new RotatedPillarBlock(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
+    public static final Block DESERT_PILLAR_LOG = registerBlock("desert_pillar_log",
+            properties -> new RotatedPillarBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     //crate
@@ -197,11 +199,11 @@ public class RealmBlocks {
     public static final Block DARK_GREEN_BLOCK = registerBlock("dark_green_block",
             properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.PLANT).lightLevel(statex-> 6).requiresCorrectToolForDrops()));
     public static final Block DARK_GLOW_BLOCK = registerBlock("dark_glow_block",
-            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.PLANT).lightLevel(statex-> 6).requiresCorrectToolForDrops()));
+            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_LIGHT_GREEN).lightLevel(statex-> 6).requiresCorrectToolForDrops()));
     public static final Block DARK_GLOM_BLOCK = registerBlock("dark_glom_block",
-            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.PLANT).lightLevel(statex-> 8).requiresCorrectToolForDrops()));
+            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_GREEN).lightLevel(statex-> 8).requiresCorrectToolForDrops()));
     public static final Block LIGHT_GRAY_BLOCK = registerBlock("light_gray_block",
-            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.PLANT).lightLevel(statex-> 8).requiresCorrectToolForDrops()));
+            properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_GRAY).lightLevel(statex-> 8).requiresCorrectToolForDrops()));
 
 
 
