@@ -154,6 +154,7 @@ public class RealmLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(RealmBlocks.DARK_GREEN_BLOCK);
         dropSelf(RealmBlocks.DARK_GLOW_BLOCK);
         dropSelf(RealmBlocks.DARK_GLOM_BLOCK);
+        dropSelf(RealmBlocks.LIGHT_GRAY_BLOCK);
 
 
 

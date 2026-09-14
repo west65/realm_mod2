@@ -120,6 +120,7 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmBlocks.DARK_GREEN_BLOCK);
                         output.accept(RealmBlocks.DARK_GLOW_BLOCK);
                         output.accept(RealmBlocks.DARK_GLOM_BLOCK);
+                        output.accept(RealmBlocks.LIGHT_GRAY_BLOCK);
 
 
 

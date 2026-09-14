@@ -375,6 +375,7 @@ tag(RealmTags.BLOCK.desert)
 
 
       tag(BlockTags.GRASS_BLOCKS)
+              .add(RealmBlocks.getRK(RealmBlocks.LIGHT_GRAY_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOM_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOW_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GREEN_BLOCK))
@@ -386,6 +387,7 @@ tag(RealmTags.BLOCK.desert)
 
 
       tag(RealmTags.BLOCK.fantasy_grass)
+              .add(RealmBlocks.getRK(RealmBlocks.LIGHT_GRAY_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOM_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GLOW_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.DARK_GREEN_BLOCK))

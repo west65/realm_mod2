@@ -279,6 +279,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.dark_green_block", "dark_green_block");
         translationBuilder.add("block.realm_mod.dark_glow_block", "dark_glow_block");
         translationBuilder.add("block.realm_mod.dark_glom_block", "dark_glom_block");
+        translationBuilder.add("block.realm_mod.light_gray_block", "light_gray_block");
 
         translationBuilder.add("block.realm_mod.crate_log", "crate_log");
         translationBuilder.add("block.realm_mod.crate1_log", "crate1_log");
