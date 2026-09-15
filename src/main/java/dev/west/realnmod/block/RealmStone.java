@@ -18,6 +18,15 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.function.Function;
 
 public class RealmStone {
+    public static final Block AGED_STONE_BRICK2 = registerBlock("aged_stone_brick2",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block AGED_STONE_BRICK1 = registerBlock("aged_stone_brick1",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block AGED_STONE_BRICK = registerBlock("aged_stone_brick",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block AGED_STONE = registerBlock("aged_stone",
             properties -> new Block(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -227,6 +236,18 @@ public class RealmStone {
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block STONE_ROCK2_WALL = registerBlock("stone_rock2_wall",
             properties -> new WallBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block LAVA_STONE = registerBlock("lava_stone",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block LAVA_STONE_SLAB = registerBlock("lava_stone_slab",
+            properties -> new SlabBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block LAVA_STONE_FENCE = registerBlock("lava_stone_fence",
+            properties -> new FenceBlock(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block LAVA_STONE_1 = registerBlock("lava_stone_1",
+            properties -> new RealmLayers(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static ResourceKey<Block> getRK(Block block) {

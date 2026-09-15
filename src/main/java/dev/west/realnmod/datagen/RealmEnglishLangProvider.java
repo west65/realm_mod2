@@ -40,6 +40,14 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
 
 
 
+
+        translationBuilder.add("block.realm_mod.lava_stone_1", "lava_stone_1");
+        translationBuilder.add("block.realm_mod.lava_stone_fence", "lava_stone_fence");
+        translationBuilder.add("block.realm_mod.lava_stone", "lava_stone");
+        translationBuilder.add("block.realm_mod.lava_stone_slab", "lava_stone_slab");
+        translationBuilder.add("block.realm_mod.aged_stone_brick2", "aged_stone_brick2");
+        translationBuilder.add("block.realm_mod.aged_stone_brick1", "aged_stone_brick1");
+        translationBuilder.add("block.realm_mod.aged_stone_brick", "aged_stone_brick");
         translationBuilder.add("block.realm_mod.aged_stone_1", "aged_stone_1");
         translationBuilder.add("block.realm_mod.aged_stone_slab", "aged_stone_slab");
         translationBuilder.add("block.realm_mod.aged_stone", "aged_stone");

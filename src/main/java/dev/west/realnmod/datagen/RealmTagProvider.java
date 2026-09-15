@@ -150,6 +150,7 @@ tag(RealmTags.BLOCK.desert)
 
 
     tag(BlockTags.SLABS)
+            .add(RealmStone.getRK(RealmStone.LAVA_STONE_SLAB))
             .add(RealmStone.getRK(RealmStone.AGED_STONE_SLAB))
             .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_SLAB))
             .add(RealmStone.getRK(RealmStone.STONE_ROCK2_SLAB))
@@ -174,7 +175,12 @@ tag(RealmTags.BLOCK.desert)
 
 
         tag(RealmTags.BLOCK.STONE)
+                .add(RealmStone.getRK(RealmStone.LAVA_STONE_FENCE))
+                .add(RealmStone.getRK(RealmStone.LAVA_STONE_SLAB))
                 .add(RealmStone.getRK(RealmStone.AGED_STONE))
+                .add(RealmStone.getRK(RealmStone.AGED_STONE_BRICK))
+                .add(RealmStone.getRK(RealmStone.AGED_STONE_BRICK1))
+                .add(RealmStone.getRK(RealmStone.AGED_STONE_BRICK2))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK2_SLAB))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK_n1))
                 .add(RealmStone.getRK(RealmStone.STONE_ROCK_n))
@@ -255,6 +261,7 @@ tag(RealmTags.BLOCK.desert)
                 .add(RealmStone.getRK(RealmStone.stone_brick_m1))
                 .add(RealmBlocks.getRK(RealmBlocks.DEEP_SILVER_STONE))
                 .add(RealmBlocks.getRK(RealmBlocks.DEEP_SILVER_STONE1))
+                .add(RealmStone.getRK(RealmStone.LAVA_STONE))
                 .add(RealmStone.getRK(RealmStone.stone));
 
 
@@ -298,6 +305,7 @@ tag(RealmTags.BLOCK.desert)
 
 
        tag(BlockTags.FENCES)
+               .add(RealmStone.getRK(RealmStone.LAVA_STONE_FENCE))
                .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_FENCE))
                .add(Realm_logs.getRK(Realm_logs.WINTER_OAK_FENCE))
                .add(Realm_logs.getRK(Realm_logs.BURN_BIRCH_fence))

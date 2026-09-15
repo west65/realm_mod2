@@ -52,6 +52,7 @@ public class RealmModelProvider extends FabricModelProvider {
         var realm20 = blockModelGenerators.family(Realm_logs.WINTER_OAK_PLANKS);
         var realm21 = blockModelGenerators.family(Realm_logs.ESWELL_BIRCH_PLANKS);
         var realm22 = blockModelGenerators.family(RealmStone.AGED_STONE);
+        var realm23 = blockModelGenerators.family(RealmStone.LAVA_STONE);
 
 
 
@@ -375,6 +376,9 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
+        blockModelGenerators.createTrivialCube(RealmStone.AGED_STONE_BRICK2);
+        blockModelGenerators.createTrivialCube(RealmStone.AGED_STONE_BRICK1);
+        blockModelGenerators.createTrivialCube(RealmStone.AGED_STONE_BRICK);
         blockModelGenerators.createTrivialCube(RealmStone.stone_brick5);
         blockModelGenerators.createTrivialCube(RealmStone.stone_brick4);
         blockModelGenerators.createTrivialCube(RealmStone.stone_brick_m1);
@@ -412,6 +416,7 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK1);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK_n);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK_n1);
+
 
 
 
@@ -454,6 +459,9 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
         realm5.slab(RealmStone.MITHRIL_COBBLE_SLAB);
+
+        realm23.slab(RealmStone.LAVA_STONE_SLAB);
+        realm23.fence(RealmStone.LAVA_STONE_FENCE);
 
 
 

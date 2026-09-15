@@ -1,6 +1,11 @@
 {
   "values": [
+    "realm_mod:lava_stone_fence",
+    "realm_mod:lava_stone_slab",
     "realm_mod:aged_stone",
+    "realm_mod:aged_stone_brick",
+    "realm_mod:aged_stone_brick1",
+    "realm_mod:aged_stone_brick2",
     "realm_mod:stone_rock2_slab",
     "realm_mod:stone_rock_n1",
     "realm_mod:stone_rock_n",
@@ -81,6 +86,7 @@
     "realm_mod:stone_brick_m1",
     "realm_mod:deep_silver_stone",
     "realm_mod:deep_silver_stone1",
+    "realm_mod:lava_stone",
     "realm_mod:stone"
   ]
 }

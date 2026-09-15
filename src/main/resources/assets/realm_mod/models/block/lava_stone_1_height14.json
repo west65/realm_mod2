@@ -1,7 +1,7 @@
 {
     "textures": {
-        "particle": "realm_mod:block/rock_stone_s",
-        "texture": "realm_mod:block/rock_stone_s"
+        "particle": "realm_mod:block/lava_stone",
+        "texture": "realm_mod:block/lava_stone"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

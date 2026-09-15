@@ -206,6 +206,9 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmStone.AGED_STONE);
                         output.accept(RealmStone.AGED_STONE_SLAB);
                         output.accept(RealmStone.AGED_STONE_1);
+                        output.accept(RealmStone.AGED_STONE_BRICK);
+                        output.accept(RealmStone.AGED_STONE_BRICK1);
+                        output.accept(RealmStone.AGED_STONE_BRICK2);
                         output.accept(RealmStone.WHITE_STONE_1);
                         output.accept(RealmStone.WHITE_STONE);
                         output.accept(RealmStone.stone_block);
@@ -273,6 +276,10 @@ public class RealmCreativeModeTabs {
                         output.accept(RealmStone.STONE_DEEP_ROCK1);
                         output.accept(RealmStone.STONEBRICK);
                         output.accept(RealmStone.deep_black_stone);
+                        output.accept(RealmStone.LAVA_STONE);
+                        output.accept(RealmStone.LAVA_STONE_SLAB);
+                        output.accept(RealmStone.LAVA_STONE_FENCE);
+                        output.accept(RealmStone.LAVA_STONE_1);
 
 
 
