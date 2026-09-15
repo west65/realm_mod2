@@ -314,6 +314,8 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialBlock(Realm_logs.ESWELL_LEAVES, TexturedModel.LEAVES);
         blockModelGenerators.createTrivialBlock(Realm_logs.SHADOW_birch_LEAVES, TexturedModel.LEAVES);
         blockModelGenerators.createTrivialBlock(Realm_logs.BLOOD_oak_LEAVES, TexturedModel.LEAVES);
+        blockModelGenerators.createTrivialBlock(Realm_logs.CORRUPT_BEECH_LEAVES, TexturedModel.LEAVES);
+        blockModelGenerators.createTrivialBlock(Realm_logs.ESWELL_BIRCH_LEAVES, TexturedModel.LEAVES);
 
 
         blockModelGenerators.createTrivialCube(RealmMushroom.angel_mushroom);

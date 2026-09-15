@@ -269,6 +269,8 @@ tag(RealmTags.BLOCK.desert)
 
 
        tag(BlockTags.MINEABLE_WITH_AXE)
+               .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_LEAVES))
+               .add(Realm_logs.getRK(Realm_logs.CORRUPT_BEECH_LEAVES))
                .add(Realm_logs.getRK(Realm_logs.BLUE_SPRUCE_LOG))
                .add(Realm_logs.getRK(Realm_logs.RED_WOOD_LOG))
                .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_FENCE))

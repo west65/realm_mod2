@@ -242,8 +242,18 @@ public class Realm_logs {
     public static final Block CORRUPT_BEECH_LOG = registerBlock("corrupt_beech_log",
             properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
                     .sound(SoundType.WOOD).ignitedByLava()));
-
-
+    public static final Block CORRUPT_BEECH_LEAVES = registerBlock("corrupt_beech_leaves",
+            properties -> new UntintedParticleLeavesBlock(0f, ParticleTypes.PALE_OAK_LEAVES,
+                    properties.mapColor(MapColor.COLOR_BLUE).strength(0.2F).randomTicks().sound(SoundType.GRASS)
+                            .noOcclusion().isValidSpawn(Blocks::ocelotOrParrot).isSuffocating(Blocks::never)
+                            .isViewBlocking(Blocks::never).ignitedByLava().pushReaction(PushReaction.DESTROY)
+                            .isRedstoneConductor(Blocks::never)));
+    public static final Block ESWELL_BIRCH_LEAVES = registerBlock("eswell_birch_leaves",
+            properties -> new UntintedParticleLeavesBlock(0f, ParticleTypes.PALE_OAK_LEAVES,
+                    properties.mapColor(MapColor.COLOR_ORANGE).strength(0.2F).randomTicks().sound(SoundType.GRASS)
+                            .noOcclusion().isValidSpawn(Blocks::ocelotOrParrot).isSuffocating(Blocks::never)
+                            .isViewBlocking(Blocks::never).ignitedByLava().pushReaction(PushReaction.DESTROY)
+                            .isRedstoneConductor(Blocks::never)));
 
 
 

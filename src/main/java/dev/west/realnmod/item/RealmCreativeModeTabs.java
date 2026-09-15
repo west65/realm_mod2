@@ -603,6 +603,7 @@ public class RealmCreativeModeTabs {
                     .title(Component.translatable("item.realm_logs"))
                     .displayItems((parameters, output) -> {
                         output.accept(Realm_logs.CORRUPT_BEECH_LOG);
+                        output.accept(Realm_logs.CORRUPT_BEECH_LEAVES);
                         output.accept(Realm_logs.MAPLEHAVEN_LOG);
                         output.accept(Realm_logs.WILLOW_BLOOM_LOG);
                         output.accept(Realm_logs.sorcerers_OAK_LOG);
@@ -622,6 +623,7 @@ public class RealmCreativeModeTabs {
                         output.accept(Realm_logs.LIGHT_BIRCH_LOG);
                         output.accept(Realm_logs.ESWELL_BIRCH_LOG);
                         output.accept(Realm_logs.ESWELL_LEAVES);
+                        output.accept(Realm_logs.ESWELL_BIRCH_LEAVES);
                         output.accept(Realm_logs.ESWELL_BIRCH_PLANKS);
                         output.accept(Realm_logs.ESWELL_BIRCH_WALL);
                         output.accept(Realm_logs.ESWELL_BIRCH_FENCE);

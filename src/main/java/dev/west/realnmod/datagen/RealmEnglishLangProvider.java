@@ -220,6 +220,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.dark_soul_log_chain", "dark_soul_log_chain");
         translationBuilder.add("block.realm_mod.dark_branch", "dark_branch");
         translationBuilder.add("block.realm_mod.dark_soul_planks", "dark_soul_planks");
+        translationBuilder.add("block.realm_mod.dark_soul_leaves", "dark_soul_leaves");
         translationBuilder.add("block.realm_mod.dark_soul_stairs", "dark_soul_stairs");
         translationBuilder.add("block.realm_mod.white_oak_log", "white_oak_log");
         translationBuilder.add("block.realm_mod.white_oak_planks", "white_oak_planks");
@@ -268,6 +269,8 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.rhyolite", "rhyolite");
         translationBuilder.add("block.realm_mod.rhyolite1", "rhyolite1");
         translationBuilder.add("block.realm_mod.corrupt_beech_log", "corrupt_beech_log");
+        translationBuilder.add("block.realm_mod.corrupt_beech_leaves", "corrupt_beech_leaves");
+        translationBuilder.add("block.realm_mod.eswell_birch_leaves", "eswell_birch_leaves");
 
         translationBuilder.add("block.realm_mod.light_mithril_pillar_log", "light_mithril_pillar_log");
         translationBuilder.add("block.realm_mod.crystal_pillar_log", "crystal_pillar_log");
