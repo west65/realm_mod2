@@ -175,6 +175,7 @@ tag(RealmTags.BLOCK.desert)
 
 
         tag(RealmTags.BLOCK.STONE)
+                .add(RealmStone.getRK(RealmStone.gorvask_stone))
                 .add(RealmStone.getRK(RealmStone.LAVA_STONE_FENCE))
                 .add(RealmStone.getRK(RealmStone.LAVA_STONE_SLAB))
                 .add(RealmStone.getRK(RealmStone.AGED_STONE))
@@ -269,6 +270,9 @@ tag(RealmTags.BLOCK.desert)
 
 
        tag(BlockTags.MINEABLE_WITH_AXE)
+               .add(Realm_logs.getRK(Realm_logs.BRAMBLEGROVE_LOG))
+               .add(Realm_logs.getRK(Realm_logs.OBANT_LOG))
+               .add(Realm_logs.getRK(Realm_logs.FOXGLOVE_LOG))
                .add(Realm_logs.getRK(Realm_logs.ESWELL_BIRCH_LEAVES))
                .add(Realm_logs.getRK(Realm_logs.CORRUPT_BEECH_LEAVES))
                .add(Realm_logs.getRK(Realm_logs.BLUE_SPRUCE_LOG))
@@ -409,6 +413,23 @@ tag(RealmTags.BLOCK.desert)
               .add(RealmBlocks.getRK(RealmBlocks.MITHRIL_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.ASH_BLOCK))
               .add(RealmBlocks.getRK(RealmBlocks.silver_BLOCK));
+
+
+
+
+      tag(RealmTags.BLOCK.evil)
+              .add(RealmBlocks.getRK(RealmBlocks.evil_wool))
+              .add(RealmStone.getRK(RealmStone.gorvask_stone));
+
+
+
+
+
+      tag(RealmTags.BLOCK.fantasy_wool)
+              .add(RealmBlocks.getRK(RealmBlocks.mithril_wool))
+              .add(RealmBlocks.getRK(RealmBlocks.moss_wool));
+
+
 
 
 

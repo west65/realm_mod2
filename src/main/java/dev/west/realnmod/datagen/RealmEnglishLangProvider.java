@@ -6,6 +6,8 @@ import net.minecraft.core.HolderLookup;
 
 import java.util.concurrent.CompletableFuture;
 
+
+
 public class RealmEnglishLangProvider extends FabricLanguageProvider {
     public RealmEnglishLangProvider(FabricPackOutput packOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
         super(packOutput, registryLookup);
@@ -40,7 +42,16 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
 
 
 
+        //wool
+        translationBuilder.add("block.realm_mod.evil_wool", "evil_wool");
+        translationBuilder.add("block.realm_mod.moss_wool", "moss_wool");
+        translationBuilder.add("block.realm_mod.mithril_wool", "mithril_wool");
 
+
+
+
+
+        //stones
         translationBuilder.add("block.realm_mod.lava_stone_1", "lava_stone_1");
         translationBuilder.add("block.realm_mod.lava_stone_fence", "lava_stone_fence");
         translationBuilder.add("block.realm_mod.lava_stone", "lava_stone");
@@ -183,12 +194,15 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.dark_stone_deep_brick", "dark_stone_deep_brick");
         translationBuilder.add("block.realm_mod.dark_stone_deep_brick1", "dark_stone_deep_brick1");
         translationBuilder.add("block.realm_mod.dark_stone_deep1", "dark_stone_deep1");
+        translationBuilder.add("block.realm_mod.gorvask_stone", "gorvask_stone");
 
         translationBuilder.add("block.realm_mod.mithril_glow", "mithril_glow");
         translationBuilder.add("block.realm_mod.dark_soul_glow", "dark_soul_glow");
         translationBuilder.add("block.realm_mod.gold_light_glow", "gold_light_glow");
 
 
+
+        //mushrooms
         translationBuilder.add("block.realm_mod.angel_mushroom", "angel_mushroom");
         translationBuilder.add("block.realm_mod.marshmoon_mushroom", "marshmoon_mushroom");
         translationBuilder.add("block.realm_mod.dark_soul_mushroom", "dark_soul_mushroom");
@@ -204,6 +218,12 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.realm_mod.desert_rock2", "desert_rock2");
 
 
+
+
+        //logs
+        translationBuilder.add("block.realm_mod.bramblegrove_log", "bramblegrove_log");
+        translationBuilder.add("block.realm_mod.obant_log", "obant_log");
+        translationBuilder.add("block.realm_mod.foxglove_log", "foxglove_log");
         translationBuilder.add("block.realm_mod.shadow_birch_leaves", "shadow_birch_leaves");
         translationBuilder.add("block.realm_mod.eswell_leaves", "eswell_leaves");
         translationBuilder.add("block.realm_mod.alder_log", "alder_log");
@@ -428,7 +448,7 @@ public class RealmEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.realm.pillar", "pillar");
         translationBuilder.add("item.realm.crate", "crate");
         translationBuilder.add("item.realm.grass", "grass");
-
+        translationBuilder.add("item.realm.wool", "wool");
 
 
 

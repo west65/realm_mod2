@@ -148,6 +148,9 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.woodProvider(Realm_logs.WILLOW_BLOOM_LOG).log(Realm_logs.WILLOW_BLOOM_LOG);
         blockModelGenerators.woodProvider(Realm_logs.MAPLEHAVEN_LOG).log(Realm_logs.MAPLEHAVEN_LOG);
         blockModelGenerators.woodProvider(Realm_logs.CORRUPT_BEECH_LOG).log(Realm_logs.CORRUPT_BEECH_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.FOXGLOVE_LOG).log(Realm_logs.FOXGLOVE_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.OBANT_LOG).log(Realm_logs.OBANT_LOG);
+        blockModelGenerators.woodProvider(Realm_logs.BRAMBLEGROVE_LOG).log(Realm_logs.BRAMBLEGROVE_LOG);
 
 
 
@@ -418,6 +421,16 @@ public class RealmModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK1);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK_n);
         blockModelGenerators.createTrivialCube(RealmStone.STONE_ROCK_n1);
+        blockModelGenerators.createTrivialCube(RealmStone.gorvask_stone);
+
+
+
+
+
+
+        blockModelGenerators.createTrivialCube(RealmBlocks.evil_wool);
+        blockModelGenerators.createTrivialCube(RealmBlocks.moss_wool);
+        blockModelGenerators.createTrivialCube(RealmBlocks.mithril_wool);
 
 
 

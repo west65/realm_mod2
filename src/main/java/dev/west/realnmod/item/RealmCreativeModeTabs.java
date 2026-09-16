@@ -109,6 +109,28 @@ public class RealmCreativeModeTabs {
 
                     }).build());
 
+
+    public static final CreativeModeTab wool = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"wool"),
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.evil_wool))
+                    .title(Component.translatable("item.realm.wool"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(RealmBlocks.evil_wool);
+                        output.accept(RealmBlocks.moss_wool);
+                        output.accept(RealmBlocks.mithril_wool);
+
+
+
+
+
+
+
+
+
+
+
+                    }).build());
+
     public static final CreativeModeTab grass = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Realm_Mod.MOD_ID,"grass"),
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmBlocks.MITHRIL_BLOCK))
@@ -203,6 +225,7 @@ public class RealmCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(RealmStone.stone))
                     .title(Component.translatable("item.realm_stone"))
                     .displayItems((parameters, output) -> {
+                        output.accept(RealmStone.gorvask_stone);
                         output.accept(RealmStone.AGED_STONE);
                         output.accept(RealmStone.AGED_STONE_SLAB);
                         output.accept(RealmStone.AGED_STONE_1);
@@ -602,6 +625,9 @@ public class RealmCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(()-> new ItemStack(Realm_logs.WHITE_PINE_LOG))
                     .title(Component.translatable("item.realm_logs"))
                     .displayItems((parameters, output) -> {
+                        output.accept(Realm_logs.BRAMBLEGROVE_LOG);
+                        output.accept(Realm_logs.OBANT_LOG);
+                        output.accept(Realm_logs.FOXGLOVE_LOG);
                         output.accept(Realm_logs.CORRUPT_BEECH_LOG);
                         output.accept(Realm_logs.CORRUPT_BEECH_LEAVES);
                         output.accept(Realm_logs.MAPLEHAVEN_LOG);

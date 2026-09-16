@@ -208,6 +208,19 @@ public class RealmBlocks {
             properties -> new GrassBlock(properties.strength(1.0F).mapColor(MapColor.COLOR_GRAY).lightLevel(statex-> 10).requiresCorrectToolForDrops()));
 
 
+    //wool
+    public static final Block evil_wool = registerBlock("evil_wool",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.WOOL)));
+    public static final Block moss_wool = registerBlock("moss_wool",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.WOOL)));
+    public static final Block mithril_wool = registerBlock("mithril_wool",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.WOOL)));
+
+
+
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }

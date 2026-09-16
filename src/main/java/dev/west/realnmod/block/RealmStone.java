@@ -249,6 +249,12 @@ public class RealmStone {
     public static final Block LAVA_STONE_1 = registerBlock("lava_stone_1",
             properties -> new RealmLayers(properties.strength(1.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block gorvask_stone = registerBlock("gorvask_stone",
+            properties -> new Block(properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE).lightLevel(state -> 7)));
+
+
+
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();

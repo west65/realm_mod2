@@ -254,9 +254,15 @@ public class Realm_logs {
                             .noOcclusion().isValidSpawn(Blocks::ocelotOrParrot).isSuffocating(Blocks::never)
                             .isViewBlocking(Blocks::never).ignitedByLava().pushReaction(PushReaction.DESTROY)
                             .isRedstoneConductor(Blocks::never)));
-
-
-
+    public static final Block FOXGLOVE_LOG = registerBlock("foxglove_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block OBANT_LOG = registerBlock("obant_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BRAMBLEGROVE_LOG = registerBlock("bramblegrove_log",
+            properties -> new RotatedPillarBlock(properties.mapColor(MapColor.WOOD).strength(2f)
+                    .sound(SoundType.WOOD).ignitedByLava()));
 
 
 
